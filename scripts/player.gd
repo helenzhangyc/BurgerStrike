@@ -7,9 +7,10 @@ extends CharacterBody2D
 @onready var signal_bus = get_node("/root/SignalBus")
 
 func _process(delta):
+	look_at(get_global_mouse_position())
 	# handle shooting
 	if Input.is_action_just_pressed('shoot'):
-		signal_bus.bullet_shoot.emit(bullet_scene, bullet_spawn.global_position)
+		signal_bus.bullet_shoot.emit(bullet_scene, bullet_spawn.global_position, rotation)
 
 
 func _physics_process(delta):

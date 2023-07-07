@@ -15,8 +15,9 @@ func _process(_delta):
 	if Input.is_action_just_pressed("restart"):
 		get_tree().reload_current_scene()
 
-func _on_bullet_shoot(bullet_scene, location):
+func _on_bullet_shoot(bullet_scene, location, rotation):
 	var bullet = bullet_scene.instantiate()
 	bullet.global_position = location
+	bullet.rotation = rotation
 	bullet_container.add_child(bullet)
 	
