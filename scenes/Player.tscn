@@ -39,6 +39,7 @@ items = Array[Resource("res://scripts/BurgerItem.gd")]([null])
 [node name="Shooter" type="Node2D" parent="."]
 script = ExtResource("5_372h2")
 ammunition = Array[Resource("res://scripts/SauceItem.gd")]([ExtResource("6_8uwjp"), ExtResource("6_8uwjp"), ExtResource("6_8uwjp"), ExtResource("6_8uwjp"), ExtResource("6_8uwjp")])
+default_ammo = ExtResource("6_8uwjp")
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 2

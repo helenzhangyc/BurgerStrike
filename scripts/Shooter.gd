@@ -2,6 +2,7 @@ extends Node
 
 
 @export var ammunition: Array[SauceItem]
+@export var default_ammo: SauceItem
 
 @export var shooting_queue: Array = ["lettuce", "shoe", "ketchup", "lettuce", "lettuce", "ketchup"]
 
@@ -20,6 +21,10 @@ func add_bullet(item):
 		ammunition.push_back(item)
 
 func use_bullet():
-	return ammunition.pop_front()
+	var ammo = ammunition.pop_front()
+	if ammo != null:
+		return ammo
+	else:
+		return default_ammo
 	
 

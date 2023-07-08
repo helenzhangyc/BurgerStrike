@@ -27,13 +27,13 @@ func _process(delta):
 
 		var bullet = $Shooter.use_bullet()
 		# print("shooting bullet", bullet)
-		if bullet != null:
-			var inst = bullet_scene.instantiate()
-			# print("instantiate bullet", inst)
-			inst.global_position = bullet_spawn.global_position
-			inst.rotation = rotation
-			inst.modulate = Color.RED
-			globals.bullet_container.add_child(inst)
+
+		var inst = bullet_scene.instantiate()
+		# print("instantiate bullet", inst)
+		inst.global_position = bullet_spawn.global_position
+		inst.rotation = rotation
+		inst.modulate = Color.RED
+		globals.bullet_container.add_child(inst)
 
 func _physics_process(delta):
 	
