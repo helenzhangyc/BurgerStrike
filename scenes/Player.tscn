@@ -7,10 +7,12 @@
 [ext_resource type="Script" path="res://scripts/Inventory.gd" id="4_py77w"]
 [ext_resource type="Script" path="res://scripts/Shooter.gd" id="5_372h2"]
 [ext_resource type="Resource" uid="uid://gk7qypk05u23" path="res://resources/items/sauce/ketchup.tres" id="6_1m6i8"]
+[ext_resource type="Script" path="res://scripts/Stats.gd" id="7_hndj4"]
 [ext_resource type="AudioStream" uid="uid://nm8fkkasoa2e" path="res://audio/sfx/step_01.wav" id="8_uvkqu"]
 [ext_resource type="Script" path="res://scripts/WalkSFX.gd" id="9_6entu"]
 [ext_resource type="Script" path="res://scripts/WalkParticles.gd" id="10_4nsey"]
 [ext_resource type="PackedScene" uid="uid://bb3yr2vgs54hk" path="res://scenes/particles/WalkParticles.tscn" id="10_n4dqa"]
+
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w7vev"]
 size = Vector2(6, 7)
@@ -46,7 +48,6 @@ region_rect = Rect2(2.08165e-12, 2.08165e-12, 35, 35)
 
 [node name="Inventory" type="Node2D" parent="."]
 script = ExtResource("4_py77w")
-items = Array[Resource("res://scripts/resources/BurgerItem.gd")]([null])
 
 [node name="Shooter" type="Node2D" parent="."]
 script = ExtResource("5_372h2")
@@ -60,8 +61,12 @@ collision_mask = 4
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_w77tt")
 
+
+[node name="Stats" type="Node" parent="."]
+script = ExtResource("7_hndj4")
 [node name="WalkSFX" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("8_uvkqu")
 script = ExtResource("9_6entu")
 
 [connection signal="footstep" from="BobbingTweener" to="WalkParticles" method="_on_bobbing_tweener_footstep"]
+
