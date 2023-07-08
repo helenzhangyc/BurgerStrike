@@ -7,16 +7,21 @@ extends CharacterBody2D
 @onready var signal_bus = get_node("/root/SignalBus")
 @onready var globals = get_node("/root/Globals")
 
+func _ready():
+	# register self to be the player
+	if globals.player == null:
+		globals.player = self
+
 func _process(delta):
 	look_at(get_global_mouse_position())
 	# handle shooting
 	if Input.is_action_just_pressed('shoot'):
 
 		var bullet = $Shooter.use_bullet()
-		print("shooting bullet", bullet)
+		# print("shooting bullet", bullet)
 		if bullet != null:
 			var inst = bullet_scene.instantiate()
-			print("instantiate bullet", inst)
+			# print("instantiate bullet", inst)
 			inst.global_position = bullet_spawn.global_position
 			inst.rotation = rotation
 			inst.modulate = Color.RED
