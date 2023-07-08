@@ -22,6 +22,7 @@ func _on_bullet_shoot(bullet_scene, location, rotation):
 	bullet.global_position = location
 	bullet.rotation = rotation
 
+
 	#bullet_container.add_child(bullet)
 
 func _on_bullet_shoot_player(bullet_scene, location, rotation):
