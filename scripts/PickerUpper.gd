@@ -9,7 +9,7 @@ func _ready():
 func _on_area_entered(area):
 	# print("area entered", area)
 	if area is PickupItem:
-		if area is PickupItem:
+
 			if area.item is BurgerItem:
 				print("burger item", area.item)
 				$"../Inventory".add_item(area.item)
@@ -18,3 +18,4 @@ func _on_area_entered(area):
 				$"../Shooter".add_bullet(area.item)
 
 			area.queue_free()
+	$"../Stats".compute()

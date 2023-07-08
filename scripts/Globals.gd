@@ -4,3 +4,5 @@ extends Node2D
 @onready var enemy_container = $EnemyContainer
 @onready var drop_container = $DropContainer
 @onready var player = null
+
+

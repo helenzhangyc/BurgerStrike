@@ -11,5 +11,11 @@ func add_item(item):
 	items.push_back(item)
 
 # take damage and remove an item from inventory
-func remove_item():
-	items.pop_front()
+func remove_item_rand():
+	if items.size()==0:
+		return null
+	var r = randi()%items.size()
+	var item = items[r]
+	
+	items.remove_at(randi()%items.size())
+	return item

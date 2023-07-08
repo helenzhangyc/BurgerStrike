@@ -51,7 +51,13 @@ func _physics_process(delta):
 	if iframe_timer.is_stopped():
 		for area in $Area2D.get_overlapping_areas():
 			if area.get_parent() is Enemy:
-				print("ouch!")
+				
+				if $Inventory.remove_item_rand() == null:
+					pass
+				else:
+					print($Inventory.items)
+					$Stats.compute()
+					
 				iframe_timer.start()
 				break
 
