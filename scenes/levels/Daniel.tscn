@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://c0ujo7raol74o" path="res://scenes/Enemy.tscn" id="4_vfbub"]
 [ext_resource type="PackedScene" uid="uid://ckeuy4n7lbry5" path="res://scenes/PickupItem.tscn" id="6_n4xlb"]
 [ext_resource type="Resource" uid="uid://gk7qypk05u23" path="res://resources/items/sauce/ketchup.tres" id="6_tdcom"]
-[ext_resource type="Resource" uid="uid://bqmoq80j5den7" path="res://resources/items/burger/lettuce.tres" id="8_7fw84"]
+[ext_resource type="Resource" uid="uid://h54o44qdgq0w" path="res://resources/items/burger/lettuce.tres" id="8_7fw84"]
 [ext_resource type="Script" path="res://scripts/WaveManager.gd" id="8_qan7t"]
 [ext_resource type="Script" path="res://scripts/WaveSpawn.gd" id="9_jy4ro"]
 
@@ -300,6 +300,9 @@ item = ExtResource("6_tdcom")
 [node name="LettuceItem" parent="." instance=ExtResource("6_n4xlb")]
 position = Vector2(47, 37)
 item = ExtResource("8_7fw84")
+
+[node name="Enemy" parent="." instance=ExtResource("4_vfbub")]
+position = Vector2(-22, -16)
 
 [node name="WaveManager" type="Node" parent="."]
 script = ExtResource("8_qan7t")
