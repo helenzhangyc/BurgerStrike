@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cwre7pomfe73u"]
 
-[ext_resource type="Script" path="res://scripts/player.gd" id="1_vv7xc"]
+[ext_resource type="Script" path="res://scripts/Player.gd" id="1_e2y74"]
 [ext_resource type="Texture2D" uid="uid://5jnm0t5m0wyr" path="res://sprites/03.png" id="2_tpg8j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w7vev"]
@@ -10,7 +10,7 @@ size = Vector2(6, 7)
 collision_layer = 2
 collision_mask = 260
 motion_mode = 1
-script = ExtResource("1_vv7xc")
+script = ExtResource("1_e2y74")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 0.5)

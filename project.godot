@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="Starburst"
-run/main_scene="res://scenes/Level.tscn"
+config/name="BurgerStrike"
+run/main_scene="res://scenes/levels/Main.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
 
