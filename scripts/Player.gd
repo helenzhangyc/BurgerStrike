@@ -3,7 +3,6 @@ extends CharacterBody2D
 @export var bullet_scene: PackedScene = preload("res://scenes/PlayerBullet.tscn")
 @export var speed: float = 100
 @onready var bullet_spawn = $Marker2D
-
 var iframe_timer
 
 @onready var signal_bus = get_node("/root/SignalBus")
