@@ -1,6 +1,7 @@
 extends Node
 
 
+
 @export var ammunition: Array[SauceItem]
 @export var default_ammo: SauceItem
 

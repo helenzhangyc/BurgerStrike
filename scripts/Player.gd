@@ -24,6 +24,7 @@ func _process(delta):
 	# handle shooting
 	if Input.is_action_just_pressed('shoot'):
 
+
 		var bullet = $Shooter.use_bullet()
 		# print("shooting bullet", bullet)
 

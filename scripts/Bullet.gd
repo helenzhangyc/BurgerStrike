@@ -3,6 +3,7 @@ class_name PlayerBullet extends Area2D
 @export var speed: int = 200
 @export var dir: Vector2 = Vector2(0, -1)
 
+
 # how many enemies can bullet hit before destroying itself
 @export var pierce: int = 1
 
