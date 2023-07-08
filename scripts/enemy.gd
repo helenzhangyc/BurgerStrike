@@ -26,7 +26,7 @@ func _on_area_entered(area):
 		die()
 	
 func _on_shoot_timer_timeout():
-	signal_bus.bullet_shoot.emit(bullet_scene, bullet_spawn.global_position)
+	signal_bus.bullet_shoot.emit(bullet_scene, bullet_spawn.global_position, rotation)
 	# var bullet = bullet_scene.instantiate()
 	# bullet.global_position = bullet_spawn.global_position
 	# bullet.dir = Vector2(0, 1)
