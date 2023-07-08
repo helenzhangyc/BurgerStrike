@@ -4,6 +4,8 @@ extends CharacterBody2D
 @export var speed: float = 100
 @onready var bullet_spawn = $Marker2D
 
+var iframe_timer
+
 @onready var signal_bus = get_node("/root/SignalBus")
 @onready var globals = get_node("/root/Globals")
 
@@ -11,6 +13,12 @@ func _ready():
 	# register self to be the player
 	if globals.player == null:
 		globals.player = self
+
+	iframe_timer = Timer.new()
+	iframe_timer.one_shot = true
+	iframe_timer.wait_time = 1
+	iframe_timer.stop()
+	self.add_child(iframe_timer)
 
 func _process(delta):
 	look_at(get_global_mouse_position())
@@ -38,4 +46,12 @@ func _physics_process(delta):
 	velocity = input_dir * speed
 
 	move_and_slide()
+
+	# also do collision detection here
+	if iframe_timer.is_stopped():
+		for area in $Area2D.get_overlapping_areas():
+			if area.get_parent() is Enemy:
+				print("ouch!")
+				iframe_timer.start()
+				break
 
