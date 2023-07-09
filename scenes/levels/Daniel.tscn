@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://mcng3a234ys5" path="res://sprites/map.png" id="10_hxebl"]
 [ext_resource type="PackedScene" uid="uid://djsyenkottqv0" path="res://scenes/DashEnemy.tscn" id="10_so26v"]
 [ext_resource type="AudioStream" uid="uid://ddrv3f7qckn8c" path="res://audio/music/bgm.mp3" id="13_teb2s"]
-[ext_resource type="PackedScene" uid="uid://mw6a7xmk22ig" path="res://scenes/KidEnemy.tscn" id="14_fqrwf"]
+[ext_resource type="PackedScene" path="res://scenes/KidEnemy.tscn" id="14_fqrwf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lrw20"]
 texture = ExtResource("2_4uj7p")
