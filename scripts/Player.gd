@@ -35,10 +35,11 @@ func _process(delta):
 		# print("shooting bullet", bullet)
 
 		var inst = bullet_scene.instantiate()
+		inst.sauce_item = bullet
 		# print("instantiate bullet", inst)
 		inst.global_position = bullet_spawn.global_position
 		inst.rotation = angle
-		inst.modulate = Color.RED
+		# inst.modulate = Color.RED
 		globals.bullet_container.add_child(inst)
 
 func _physics_process(delta):
