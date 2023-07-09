@@ -13,9 +13,9 @@ func _ready():
 func add_item(item):
 	var inst = item_display.instantiate()
 
-	var image = Image.load_from_file(item.image_path)
-	var texture = ImageTexture.create_from_image(image)
-	inst.texture = texture
+	#var image = Image.load_from_file(item.image_path)
+	#var texture = ImageTexture.create_from_image(image)
+	inst.texture = item.image_texture
 
 	inst.global_position = global_position + Vector2(0, -1 * OFFSET * get_children().size())
 	add_child(inst)

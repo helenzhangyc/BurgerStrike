@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://cy4ibi26bgkbb" path="res://sprites/burger/carrot.png" id="5_tx27k"]
 [ext_resource type="Script" path="res://scripts/ui/Quit.gd" id="6_na2xw"]
 [ext_resource type="Texture2D" uid="uid://p8p7s2i6yake" path="res://sprites/gameover/restart.PNG" id="7_8q6s5"]
-[ext_resource type="Script" path="res://scripts/ui/Restart.gd" id="8_guffa"]
+[ext_resource type="Script" path="res://scenes/levels/titlescreen_start.gd" id="8_2hiuc"]
 
 [node name="TitleUI" type="Control"]
 layout_mode = 3
@@ -90,6 +90,7 @@ texture = ExtResource("4_l0wce")
 expand_mode = 3
 
 [node name="quit" type="TextureButton" parent="."]
+layout_mode = 0
 offset_left = 280.0
 offset_top = 469.0
 offset_right = 531.0
@@ -98,12 +99,13 @@ texture_normal = ExtResource("5_cpbw0")
 script = ExtResource("6_na2xw")
 
 [node name="restart" type="TextureButton" parent="."]
+layout_mode = 0
 offset_left = 277.0
 offset_top = 341.0
 offset_right = 535.0
 offset_bottom = 443.0
 texture_normal = ExtResource("7_8q6s5")
-script = ExtResource("8_guffa")
+script = ExtResource("8_2hiuc")
 
 [node name="TextureRect6" type="TextureRect" parent="."]
 z_index = 1

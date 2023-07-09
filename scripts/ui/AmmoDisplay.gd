@@ -13,9 +13,10 @@ func _ready():
 func add_item(item):
 	var inst = item_display.instantiate()
 
-	var image = Image.load_from_file(item.image_path)
-	var texture = ImageTexture.create_from_image(image)
-	inst.texture = texture
+	#var image = Image.load_from_file(item.image_path)
+	#var texture = ImageTexture.create_from_image(image)
+	#inst.texture = texture
+	inst.texture = item.image_texture
 
 	# inst.global_position = global_position + Vector2(-1 * OFFSET * get_children().size(), 0)
 	inst.expand_mode = TextureRect.EXPAND_FIT_WIDTH_PROPORTIONAL
