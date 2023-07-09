@@ -1,7 +1,8 @@
-[gd_scene load_steps=21 format=3 uid="uid://cwre7pomfe73u"]
+[gd_scene load_steps=22 format=3 uid="uid://cwre7pomfe73u"]
 
 [ext_resource type="Script" path="res://scripts/Player.gd" id="1_e2y74"]
 [ext_resource type="PackedScene" uid="uid://xpxg6ptqabq1" path="res://scenes/HUD.tscn" id="2_2ds4w"]
+[ext_resource type="PackedScene" uid="uid://baj4rco875n5j" path="res://scenes/DamageTweener.tscn" id="2_eq0vl"]
 [ext_resource type="PackedScene" uid="uid://dpm61alcnyakd" path="res://scenes/PauseMenu.tscn" id="2_sq4e4"]
 [ext_resource type="PackedScene" uid="uid://cfx5cdofitgxf" path="res://scenes/PickerUpper.tscn" id="3_dc2ih"]
 [ext_resource type="PackedScene" uid="uid://c2mxgonifbyx4" path="res://scenes/BobbingTweener.tscn" id="3_ds64n"]
@@ -85,7 +86,7 @@ _data = {
 
 [node name="Player" type="CharacterBody2D"]
 collision_layer = 2
-collision_mask = 260
+collision_mask = 261
 motion_mode = 1
 script = ExtResource("1_e2y74")
 
@@ -98,6 +99,9 @@ zoom = Vector2(4, 4)
 z_index = 10
 
 [node name="HUD" parent="Camera2D/CanvasLayer" instance=ExtResource("2_2ds4w")]
+
+[node name="DamageTweener" parent="." node_paths=PackedStringArray("target") instance=ExtResource("2_eq0vl")]
+target = NodePath("../PlayerSprite")
 
 [node name="BobbingTweener" parent="." node_paths=PackedStringArray("target") instance=ExtResource("3_ds64n")]
 target = NodePath("../PlayerSprite")
