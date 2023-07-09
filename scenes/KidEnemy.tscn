@@ -1,0 +1,88 @@
+[gd_scene load_steps=19 format=3 uid="uid://mw6a7xmk22ig"]
+
+[ext_resource type="Script" path="res://scripts/enemies/Enemy.gd" id="1_85gew"]
+[ext_resource type="PackedScene" uid="uid://baj4rco875n5j" path="res://scenes/DamageTweener.tscn" id="2_j06lj"]
+[ext_resource type="PackedScene" uid="uid://c2mxgonifbyx4" path="res://scenes/BobbingTweener.tscn" id="3_vramf"]
+[ext_resource type="Texture2D" uid="uid://buw3wqnn5p27b" path="res://sprites/enemy/kid.png" id="4_jwwjx"]
+[ext_resource type="Script" path="res://scripts/DropTable.gd" id="5_x3myc"]
+[ext_resource type="Script" path="res://scripts/ItemDrop.gd" id="6_jhgt6"]
+[ext_resource type="Resource" uid="uid://hqsabyijgfk0" path="res://resources/items/burger/carrot.tres" id="7_6effc"]
+[ext_resource type="Resource" uid="uid://bfagrrmvbg6dd" path="res://resources/items/sauce/mustard.tres" id="8_3klsu"]
+[ext_resource type="Script" path="res://scripts/RandomAudioPlayer.gd" id="9_657f3"]
+[ext_resource type="AudioStream" uid="uid://ckrvjvnkhsayt" path="res://audio/sfx/hit_01.wav" id="10_fd77t"]
+[ext_resource type="AudioStream" uid="uid://cdlmtqtmtpmai" path="res://audio/sfx/hit_02.wav" id="11_1jb2d"]
+[ext_resource type="AudioStream" uid="uid://bq0ekdg8taash" path="res://audio/sfx/hit_03.wav" id="12_5146v"]
+[ext_resource type="AudioStream" uid="uid://c12xrrin7in13" path="res://audio/sfx/kid_death_01.wav" id="13_q6f1e"]
+[ext_resource type="AudioStream" uid="uid://dcyi0kerkns4a" path="res://audio/sfx/kid_death_02.wav" id="14_eaofm"]
+[ext_resource type="AudioStream" uid="uid://cpeyqp8bbqq78" path="res://audio/sfx/kid_death_03.wav" id="15_q1k1k"]
+[ext_resource type="AudioStream" uid="uid://b8ifsm0x8d8i2" path="res://audio/sfx/kid_death_04.wav" id="16_w4xby"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_c27jd"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kbysg"]
+radius = 20.0
+
+[node name="KidEnemy" type="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 12
+motion_mode = 1
+script = ExtResource("1_85gew")
+speed = 100
+health = 1
+
+[node name="DamageTweener" parent="." node_paths=PackedStringArray("target") instance=ExtResource("2_j06lj")]
+target = NodePath("../Sprite2D")
+
+[node name="BobbingTweener" parent="." node_paths=PackedStringArray("target") instance=ExtResource("3_vramf")]
+magnitude = 2.0
+target = NodePath("../Sprite2D")
+speed = 0.07
+rotate = 0.2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_c27jd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1, -1)
+scale = Vector2(0.049326, 0.049326)
+texture = ExtResource("4_jwwjx")
+region_rect = Rect2(8, 0, 8, 8)
+
+[node name="ShootTimer" type="Timer" parent="."]
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(0, -2)
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+y_sort_enabled = true
+shape = SubResource("CircleShape2D_kbysg")
+
+[node name="DropTable" type="Node" parent="."]
+script = ExtResource("5_x3myc")
+
+[node name="ItemDrop" type="Node" parent="DropTable"]
+script = ExtResource("6_jhgt6")
+item = ExtResource("7_6effc")
+chance = 0.3
+
+[node name="ItemDrop2" type="Node" parent="DropTable"]
+script = ExtResource("6_jhgt6")
+item = ExtResource("8_3klsu")
+chance = 0.7
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+
+[node name="HitSFX" type="AudioStreamPlayer2D" parent="."]
+script = ExtResource("9_657f3")
+sounds = Array[AudioStreamWAV]([ExtResource("10_fd77t"), ExtResource("11_1jb2d"), ExtResource("12_5146v")])
+
+[node name="DeathSFX" type="AudioStreamPlayer2D" parent="."]
+volume_db = -10.0
+script = ExtResource("9_657f3")
+sounds = Array[AudioStreamWAV]([ExtResource("13_q6f1e"), ExtResource("14_eaofm"), ExtResource("15_q1k1k"), ExtResource("16_w4xby")])
+
+[connection signal="timeout" from="ShootTimer" to="." method="_on_shoot_timer_timeout"]

@@ -1,9 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://diubf3oq1cwpu"]
+[gd_scene load_steps=6 format=3 uid="uid://c6xtngkxyjo6o"]
 
-[ext_resource type="Texture2D" uid="uid://cldluutnwh0kt" path="res://sprites/gameover/gameover.PNG" id="1_qedoy"]
-[ext_resource type="Texture2D" uid="uid://drkc8tai0ws0q" path="res://sprites/gameover/quit.png" id="2_f27fu"]
+[ext_resource type="Texture2D" uid="uid://ct3thpcwwkcgm" path="res://sprites/gameover/gameover.PNG" id="1_qedoy"]
+[ext_resource type="Texture2D" uid="uid://wlbiwcj87ed0" path="res://sprites/gameover/quit.png" id="2_f27fu"]
 [ext_resource type="Script" path="res://scripts/ui/Quit.gd" id="3_dshuy"]
-[ext_resource type="Texture2D" uid="uid://c3yolkfnaf1en" path="res://sprites/gameover/restart.png" id="4_japar"]
+[ext_resource type="Texture2D" uid="uid://d0w3ak7p5bv7e" path="res://sprites/gameover/restart.png" id="4_japar"]
 [ext_resource type="Script" path="res://scripts/ui/Restart.gd" id="5_mxsvp"]
 
 [node name="GameOver" type="Node2D"]

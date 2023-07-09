@@ -4,8 +4,7 @@ class_name PlayerBullet extends Area2D
 @export var dir: Vector2 = Vector2(0, -1)
 @export var sauce_item: SauceItem
 
-# how many enemies can bullet hit before destroying itself
-@export var pierce: int = 1
+@export var damage: int
 
 var cur_pierce
 
@@ -13,7 +12,8 @@ var cur_pierce
 
 func _ready():
 	area_entered.connect(_on_area_entered)
-	cur_pierce = pierce
+	cur_pierce = sauce_item.pierce
+	damage = sauce_item.damage
 
 	# set the sprite
 	var image = Image.load_from_file(sauce_item.bullet_sprite)

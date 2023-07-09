@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource("1_8gqee")
-type = 2
-name = "Lettuce"
-image_path = "res://sprites/burger/lettuce.png"
+type = 4
+name = "Carrot"
+image_path = "res://sprites/burger/carrot.png"

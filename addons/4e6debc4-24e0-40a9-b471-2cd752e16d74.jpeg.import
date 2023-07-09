@@ -2,19 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-
-uid="uid://drkc8tai0ws0q"
-path="res://.godot/imported/quit.png-4a8dc94ac0f815c3715af153da2831e0.ctex"
-
+<<<<<<< HEAD
+uid="uid://ddwe3wpp0jglj"
+=======
+uid="uid://x680talp0bj"
+>>>>>>> 94b8299a8eafb18c86c65aa559e59906ddcffbd7
+path="res://.godot/imported/4e6debc4-24e0-40a9-b471-2cd752e16d74.jpeg-26085739d922693e5b295cd1330df300.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/gameover/quit.png"
-dest_files=["res://.godot/imported/quit.png-4a8dc94ac0f815c3715af153da2831e0.ctex"]
-
+source_file="res://addons/4e6debc4-24e0-40a9-b471-2cd752e16d74.jpeg"
+dest_files=["res://.godot/imported/4e6debc4-24e0-40a9-b471-2cd752e16d74.jpeg-26085739d922693e5b295cd1330df300.ctex"]
 
 [params]
 

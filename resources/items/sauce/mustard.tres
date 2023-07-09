@@ -4,7 +4,8 @@
 
 [resource]
 script = ExtResource("1_d5bek")
-damage = 0
+damage = 2
 bullet_sprite = "res://sprites/bullet/mustard_bullet.png"
+pierce = 1
 name = "Mustard"
 image_path = "res://sprites/sauce/mustard.png"

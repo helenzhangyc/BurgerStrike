@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://ctbe15r3nw1ey"]
+[gd_scene load_steps=18 format=3 uid="uid://ctbe15r3nw1ey"]
 
 [ext_resource type="Script" path="res://scripts/GameManager.gd" id="1_p5wqo"]
 [ext_resource type="Texture2D" uid="uid://tpf23uytvwei" path="res://sprites/tileset.png" id="2_4uj7p"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://mcng3a234ys5" path="res://sprites/map.png" id="10_hxebl"]
 [ext_resource type="PackedScene" uid="uid://djsyenkottqv0" path="res://scenes/DashEnemy.tscn" id="10_so26v"]
 [ext_resource type="AudioStream" uid="uid://ddrv3f7qckn8c" path="res://audio/music/bgm.mp3" id="13_teb2s"]
+[ext_resource type="PackedScene" uid="uid://mw6a7xmk22ig" path="res://scenes/KidEnemy.tscn" id="14_fqrwf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lrw20"]
 texture = ExtResource("2_4uj7p")
@@ -334,8 +335,46 @@ count = 5
 
 [node name="WaveSpawn2" type="Node" parent="WaveManager/Waves/2"]
 script = ExtResource("9_jy4ro")
+enemy = ExtResource("14_fqrwf")
+count = 3
+
+[node name="3" type="Node" parent="WaveManager/Waves"]
+
+[node name="WaveSpawn" type="Node" parent="WaveManager/Waves/3"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("4_vfbub")
+count = 5
+
+[node name="WaveSpawn2" type="Node" parent="WaveManager/Waves/3"]
+script = ExtResource("9_jy4ro")
 enemy = ExtResource("10_so26v")
 count = 3
+
+[node name="4" type="Node" parent="WaveManager/Waves"]
+
+[node name="WaveSpawn" type="Node" parent="WaveManager/Waves/4"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("4_vfbub")
+count = 10
+
+[node name="5" type="Node" parent="WaveManager/Waves"]
+
+[node name="WaveSpawn" type="Node" parent="WaveManager/Waves/5"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("14_fqrwf")
+count = 10
+
+[node name="6" type="Node" parent="WaveManager/Waves"]
+
+[node name="WaveSpawn" type="Node" parent="WaveManager/Waves/6"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("4_vfbub")
+count = 3
+
+[node name="WaveSpawn2" type="Node" parent="WaveManager/Waves/6"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("10_so26v")
+count = 7
 
 [node name="SpawnLocations" type="Node" parent="WaveManager"]
 
@@ -377,3 +416,6 @@ polygon = PackedVector2Array(-215, -1145, 240, -1115, 220, -1265, -215, -1250)
 stream = ExtResource("13_teb2s")
 volume_db = -20.0
 autoplay = true
+
+[node name="KidEnemy" parent="." instance=ExtResource("14_fqrwf")]
+position = Vector2(-53, -64)

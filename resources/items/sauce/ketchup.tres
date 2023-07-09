@@ -4,7 +4,8 @@
 
 [resource]
 script = ExtResource("1_u68gb")
-damage = 0
+damage = 1
 bullet_sprite = "res://sprites/bullet/ketchup_bullet.png"
+pierce = 2
 name = "Ketchup"
 image_path = "res://sprites/sauce/ketchup.png"
