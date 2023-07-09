@@ -12,6 +12,7 @@ class_name Enemy extends CharacterBody2D
 @onready var signal_bus = get_node("/root/SignalBus")
 @onready var globals = get_node("/root/Globals")
 
+signal took_damage
 
 var alive = true
 
@@ -40,6 +41,7 @@ func _on_area_entered(area):
 
 	if alive:
 		if area is PlayerBullet:
+			took_damage.emit()
 			health-=1
 			if health<=0:
 				die()
