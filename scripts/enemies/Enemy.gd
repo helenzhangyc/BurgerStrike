@@ -58,6 +58,7 @@ func _on_shoot_timer_timeout():
 func die():
 
 	alive = false
+	signal_bus.enemy_died.emit()
 
 	# decide on what items to drop
 	var drops = drop_table.get_drop()

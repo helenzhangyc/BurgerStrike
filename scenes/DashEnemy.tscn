@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://djsyenkottqv0"]
+[gd_scene load_steps=19 format=3 uid="uid://0v8332ino1gs"]
 
 [ext_resource type="Script" path="res://scripts/enemies/DashEnemy.gd" id="1_ikb46"]
 [ext_resource type="Script" path="res://scripts/RandomAudioPlayer.gd" id="2_4sdgc"]
