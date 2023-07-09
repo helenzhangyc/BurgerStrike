@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4s5xte502ljf"
-path="res://.godot/imported/mustard.png-0b18963ad779032f205a3e74cdb21b73.ctex"
+uid="uid://dpty02wbprtep"
+path="res://.godot/imported/onion.png-cd369cf9b83f39e8180b7e9db3027bef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/mustard.png"
-dest_files=["res://.godot/imported/mustard.png-0b18963ad779032f205a3e74cdb21b73.ctex"]
+source_file="res://sprites/burger/onion.png"
+dest_files=["res://.godot/imported/onion.png-cd369cf9b83f39e8180b7e9db3027bef.ctex"]
 
 [params]
 

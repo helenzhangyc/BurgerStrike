@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4s5xte502ljf"
-path="res://.godot/imported/mustard.png-0b18963ad779032f205a3e74cdb21b73.ctex"
+uid="uid://comkybd16uyko"
+path="res://.godot/imported/lettuce.png-95423c61778946b601452a1b7d1802ac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/mustard.png"
-dest_files=["res://.godot/imported/mustard.png-0b18963ad779032f205a3e74cdb21b73.ctex"]
+source_file="res://sprites/burger/lettuce.png"
+dest_files=["res://.godot/imported/lettuce.png-95423c61778946b601452a1b7d1802ac.ctex"]
 
 [params]
 

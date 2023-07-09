@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4s5xte502ljf"
-path="res://.godot/imported/mustard.png-0b18963ad779032f205a3e74cdb21b73.ctex"
+uid="uid://htfipd3sitbu"
+path="res://.godot/imported/cheese.PNG-6ede882b708d6954e78f14f35e7dd37c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/mustard.png"
-dest_files=["res://.godot/imported/mustard.png-0b18963ad779032f205a3e74cdb21b73.ctex"]
+source_file="res://sprites/burger_lots_of_things/cheese.PNG"
+dest_files=["res://.godot/imported/cheese.PNG-6ede882b708d6954e78f14f35e7dd37c.ctex"]
 
 [params]
 

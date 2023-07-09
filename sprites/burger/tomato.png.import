@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4s5xte502ljf"
-path="res://.godot/imported/mustard.png-0b18963ad779032f205a3e74cdb21b73.ctex"
+uid="uid://dw34fyektnppr"
+path="res://.godot/imported/tomato.png-a3ab7b625e4a79eb1c172e6b8c858fd3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/mustard.png"
-dest_files=["res://.godot/imported/mustard.png-0b18963ad779032f205a3e74cdb21b73.ctex"]
+source_file="res://sprites/burger/tomato.png"
+dest_files=["res://.godot/imported/tomato.png-a3ab7b625e4a79eb1c172e6b8c858fd3.ctex"]
 
 [params]
 
