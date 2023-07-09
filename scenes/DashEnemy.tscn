@@ -75,7 +75,7 @@ script = ExtResource("5_6mb1c")
 [node name="ItemDrop" type="Node" parent="DropTable"]
 script = ExtResource("6_bmouo")
 item = ExtResource("14_4kq1s")
-chance = 0.5
+chance = 0.3
 
 [node name="ItemDrop2" type="Node" parent="DropTable"]
 script = ExtResource("6_bmouo")
@@ -85,11 +85,6 @@ chance = 0.5
 [node name="ItemDrop3" type="Node" parent="DropTable"]
 script = ExtResource("6_bmouo")
 item = ExtResource("16_a2acj")
-chance = 0.5
-
-[node name="ItemDrop4" type="Node" parent="DropTable"]
-script = ExtResource("6_bmouo")
-item = ExtResource("15_ivbw6")
 chance = 0.5
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
