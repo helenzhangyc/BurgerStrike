@@ -23,5 +23,6 @@ func remove_item_rand():
 	var r = randi()%items.size()
 	var item = items[r]
 	
-	items.remove_at(randi()%items.size())
-	return item
+	var index = randi()%items.size()
+	items.remove_at(index)
+	return index

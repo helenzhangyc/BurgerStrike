@@ -8,6 +8,7 @@ const OFFSET = 10
 
 func _ready():
 	signal_bus.pickup_burger_item.connect(add_item)
+	signal_bus.remove_burger_item.connect(remove_item)
 
 func add_item(item):
 	var inst = item_display.instantiate()
@@ -20,3 +21,5 @@ func add_item(item):
 	add_child(inst)
 	move_child(inst, 0)
 	
+func remove_item(index):
+	get_child(index).queue_free()

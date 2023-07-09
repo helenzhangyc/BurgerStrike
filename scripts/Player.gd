@@ -66,9 +66,11 @@ func _physics_process(delta):
 
 				$DamageSFX.play_sound()
 
-				if $Inventory.remove_item_rand() == null:
+				var remove_index = $Inventory.remove_item_rand()
+				if remove_index == null:
 					pass
 				else:
+					signal_bus.remove_burger_item.emit(remove_index)
 					print($Inventory.items)
 					$Stats.compute()
 					

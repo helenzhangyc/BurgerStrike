@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://cwre7pomfe73u"]
+[gd_scene load_steps=32 format=3 uid="uid://cwre7pomfe73u"]
 
 [ext_resource type="Script" path="res://scripts/Player.gd" id="1_e2y74"]
 [ext_resource type="PackedScene" uid="uid://xpxg6ptqabq1" path="res://scenes/HUD.tscn" id="2_2ds4w"]
@@ -13,6 +13,7 @@
 [ext_resource type="AudioStream" uid="uid://nm8fkkasoa2e" path="res://audio/sfx/step_01.wav" id="8_uvkqu"]
 [ext_resource type="Script" path="res://scripts/WalkSFX.gd" id="9_6entu"]
 [ext_resource type="Script" path="res://scripts/WalkParticles.gd" id="10_4nsey"]
+[ext_resource type="Resource" uid="uid://h54o44qdgq0w" path="res://resources/items/burger/lettuce.tres" id="10_04q36"]
 [ext_resource type="PackedScene" uid="uid://bb3yr2vgs54hk" path="res://scenes/particles/WalkParticles.tscn" id="10_n4dqa"]
 [ext_resource type="Script" path="res://scripts/PickupSFX.gd" id="14_a3p7l"]
 [ext_resource type="Script" path="res://scripts/RandomAudioPlayer.gd" id="14_n6fgr"]
@@ -129,6 +130,7 @@ shape = SubResource("RectangleShape2D_w7vev")
 
 [node name="Inventory" type="Node2D" parent="."]
 script = ExtResource("4_py77w")
+items = Array[Resource("res://scripts/resources/BurgerItem.gd")]([ExtResource("10_04q36"), ExtResource("10_04q36")])
 
 [node name="Shooter" type="Node2D" parent="."]
 script = ExtResource("5_372h2")
