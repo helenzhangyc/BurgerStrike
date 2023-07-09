@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bdtdj0ci7pivl" path="res://sprites/spritesheet.png" id="2_2nrx1"]
 [ext_resource type="Script" path="res://scripts/ItemDrop.gd" id="3_0lf62"]
 [ext_resource type="Script" path="res://scripts/DropTable.gd" id="3_vfv4k"]
-[ext_resource type="Resource" uid="uid://bqmoq80j5den7" path="res://resources/items/burger/lettuce.tres" id="4_n6oca"]
+[ext_resource type="Resource" uid="uid://bqmoq80j5den7" path="res://resources/items/burger/tomato.tres" id="4_n6oca"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w7vev"]
 size = Vector2(6, 7)
