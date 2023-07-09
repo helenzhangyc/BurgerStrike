@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="SauceItem" load_steps=2 format=3 uid="uid://cby46r3r2nmfy"]
+
+[ext_resource type="Script" path="res://scripts/resources/SauceItem.gd" id="1_2mxwd"]
+
+[resource]
+script = ExtResource("1_2mxwd")
+damage = 1
+bullet_sprite = "res://sprites/bullet/weak_sauce_bullet.png"
+pierce = 1
+name = "Weak Sauce"
+image_path = "res://sprites/sauce/weak_sauce.png"
