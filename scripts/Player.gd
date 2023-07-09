@@ -1,12 +1,12 @@
 extends CharacterBody2D
 
 @export var bullet_scene: PackedScene = preload("res://scenes/PlayerBullet.tscn")
-@export var speed: float = 100
 @onready var bullet_spawn = $Marker2D
 var iframe_timer
 
 @onready var signal_bus = get_node("/root/SignalBus")
 @onready var globals = get_node("/root/Globals")
+var attack_timer = 100
 
 func _ready():
 	# register self to be the player
@@ -22,7 +22,9 @@ func _ready():
 func _process(delta):
 	var angle = global_position.angle_to_point(get_global_mouse_position())
 	# handle shooting
-	if Input.is_action_just_pressed('shoot'):
+	attack_timer+=delta
+	if Input.is_action_just_pressed('shoot')&&attack_timer>$Stats.attack_speed:
+		attack_timer=0
 
 
 		var bullet = $Shooter.use_bullet()
@@ -43,7 +45,7 @@ func _physics_process(delta):
 		Input.get_action_strength('down')-Input.get_action_strength('up')
 	)
 
-	velocity = input_dir * speed
+	velocity = input_dir * $Stats.speed
 
 	move_and_slide()
 

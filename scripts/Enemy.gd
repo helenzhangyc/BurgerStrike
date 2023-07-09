@@ -1,7 +1,7 @@
 class_name Enemy extends CharacterBody2D
 
 @export var speed = 50
-
+@export var health = 4
 @onready var bullet_scene: PackedScene = preload("res://scenes/EnemyBullet.tscn")
 @onready var pickup_item_scene: PackedScene = preload("res://scenes/PickupItem.tscn")
 @onready var bullet_spawn = $Marker2D
@@ -10,6 +10,7 @@ class_name Enemy extends CharacterBody2D
 
 @onready var signal_bus = get_node("/root/SignalBus")
 @onready var globals = get_node("/root/Globals")
+
 
 var alive = true
 
@@ -35,7 +36,9 @@ func _on_area_entered(area):
 
 	if alive:
 		if area is PlayerBullet:
-			die()
+			health-=1
+			if health<=0:
+				die()
 	
 func _on_shoot_timer_timeout():
 	#signal_bus.bullet_shoot.emit(bullet_scene, bullet_spawn.global_position, rotation)
