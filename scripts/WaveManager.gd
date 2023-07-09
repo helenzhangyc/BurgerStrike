@@ -9,9 +9,9 @@ extends Node
 var current_wave: int = 0
 
 # time between waves
-const WAVE_REST = 5
+@export var WAVE_REST = 5
 # time between spawning concecutive enemies
-const SPAWN_REST = 0.2
+@export var SPAWN_REST = 0.2
 
 func _ready():
 	spawn_timer.timeout.connect(_on_spawn_timer_timeout)

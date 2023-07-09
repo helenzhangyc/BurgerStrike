@@ -43,7 +43,7 @@ func _on_area_entered(area):
 		if area is PlayerBullet:
 			took_damage.emit()
 			$HitSFX.play_sound()
-			health-=1
+			health-=area.damage
 			if health<=0:
 				$DeathSFX.play_sound()
 				die()

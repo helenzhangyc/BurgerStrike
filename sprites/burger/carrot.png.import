@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://16mb7r2a7lry"
-path="res://.godot/imported/woman_with_stroller.png-d42f5b1b386b9f528f5733823937adfb.ctex"
+uid="uid://70apybgjyewn"
+path="res://.godot/imported/carrot.png-07dacdc4ed9663143bb5a1c3c8d5e721.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/woman_with_stroller.png"
-dest_files=["res://.godot/imported/woman_with_stroller.png-d42f5b1b386b9f528f5733823937adfb.ctex"]
+source_file="res://sprites/burger/carrot.png"
+dest_files=["res://.godot/imported/carrot.png-07dacdc4ed9663143bb5a1c3c8d5e721.ctex"]
 
 [params]
 

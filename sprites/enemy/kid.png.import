@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcdivqhmiwhhj"
-path="res://.godot/imported/Background.PNG-eca6e83a50de4d5073c14c6e9a4770dc.ctex"
+uid="uid://buw3wqnn5p27b"
+path="res://.godot/imported/kid.png-9dfbf3b874c0bc685c7888840cd864b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/gameover/Background.PNG"
-dest_files=["res://.godot/imported/Background.PNG-eca6e83a50de4d5073c14c6e9a4770dc.ctex"]
+source_file="res://sprites/enemy/kid.png"
+dest_files=["res://.godot/imported/kid.png-9dfbf3b874c0bc685c7888840cd864b6.ctex"]
 
 [params]
 
