@@ -28,6 +28,7 @@ func _enemy_died():
 	left_in_wave -= 1
 	if left_in_wave <= 0:
 		left_in_wave = 0
+		signal_bus.new_wave.emit()
 		spawn_timer.start()
 
 
