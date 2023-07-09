@@ -1,21 +1,11 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=2 format=3 uid="uid://drsgf4c6tl76p"]
 
-[ext_resource path="res://ColorRect.gd" type="Script" id=2]
-[ext_resource path="res://cutscene.gd" type="Script" id=3]
+[ext_resource type="Script" path="res://cutscene/cutscene.gd" id="3"]
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource( 3 )
-
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
-script = ExtResource( 2 )
+script = ExtResource("3")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
 bbcode_enabled = true
