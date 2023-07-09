@@ -78,6 +78,6 @@ func _physics_process(delta):
 				break
 
 
-func _unhandled_input(event):
-	if event.is_action_pressed("ui_cancel"):
-		$"Camera2D/CanvasLayer/PauseMenu".pause()
+# func _unhandled_input(event):
+# 	if event.is_action_pressed("ui_cancel"):
+# 		$"Camera2D/CanvasLayer/PauseMenu".pause()

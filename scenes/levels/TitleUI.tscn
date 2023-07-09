@@ -1,0 +1,141 @@
+[gd_scene load_steps=11 format=3 uid="uid://ckjxr026ls76t"]
+
+[ext_resource type="Texture2D" uid="uid://dh62je2bw284q" path="res://sprites/controls.png" id="1_i3rha"]
+[ext_resource type="Texture2D" uid="uid://cvmmdyd87oanq" path="res://sprites/sauce/ketchup.png" id="2_5hhfl"]
+[ext_resource type="Texture2D" uid="uid://bcu4guplan7oj" path="res://sprites/logo.png" id="2_lda2a"]
+[ext_resource type="Texture2D" uid="uid://dw34fyektnppr" path="res://sprites/burger/tomato.png" id="3_48blm"]
+[ext_resource type="Texture2D" uid="uid://comkybd16uyko" path="res://sprites/burger/lettuce.png" id="4_l0wce"]
+[ext_resource type="Texture2D" uid="uid://dg18lpe56ei6h" path="res://sprites/gameover/quit.PNG" id="5_cpbw0"]
+[ext_resource type="Texture2D" uid="uid://cy4ibi26bgkbb" path="res://sprites/burger/carrot.png" id="5_tx27k"]
+[ext_resource type="Script" path="res://scripts/ui/Quit.gd" id="6_na2xw"]
+[ext_resource type="Texture2D" uid="uid://p8p7s2i6yake" path="res://sprites/gameover/restart.PNG" id="7_8q6s5"]
+[ext_resource type="Script" path="res://scripts/ui/Restart.gd" id="8_guffa"]
+
+[node name="TitleUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Controls" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -169.0
+offset_top = 366.0
+offset_right = 259.571
+offset_bottom = 366.0
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(0.38, 0.38)
+texture = ExtResource("1_i3rha")
+expand_mode = 3
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+z_index = 1
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -646.0
+offset_top = 103.0
+offset_right = -217.429
+offset_bottom = 103.0
+grow_horizontal = 0
+grow_vertical = 2
+rotation = -0.343207
+scale = Vector2(0.0999994, 0.0999994)
+texture = ExtResource("2_5hhfl")
+expand_mode = 3
+
+[node name="TextureRect4" type="TextureRect" parent="."]
+z_index = 1
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -161.0
+offset_top = 87.0
+offset_right = 556.021
+offset_bottom = 87.0
+grow_horizontal = 0
+grow_vertical = 2
+rotation = 0.572653
+scale = Vector2(0.0999994, 0.0999994)
+texture = ExtResource("3_48blm")
+expand_mode = 3
+
+[node name="TextureRect5" type="TextureRect" parent="."]
+z_index = 1
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -726.0
+offset_top = 234.0
+offset_right = -8.9787
+offset_bottom = 234.0
+grow_horizontal = 0
+grow_vertical = 2
+rotation = -0.454723
+scale = Vector2(0.0999994, 0.0999994)
+texture = ExtResource("4_l0wce")
+expand_mode = 3
+
+[node name="quit" type="TextureButton" parent="."]
+offset_left = 280.0
+offset_top = 469.0
+offset_right = 531.0
+offset_bottom = 569.0
+texture_normal = ExtResource("5_cpbw0")
+script = ExtResource("6_na2xw")
+
+[node name="restart" type="TextureButton" parent="."]
+offset_left = 277.0
+offset_top = 341.0
+offset_right = 535.0
+offset_bottom = 443.0
+texture_normal = ExtResource("7_8q6s5")
+script = ExtResource("8_guffa")
+
+[node name="TextureRect6" type="TextureRect" parent="."]
+z_index = 1
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -144.0
+offset_top = 258.0
+offset_right = 573.021
+offset_bottom = 258.0
+grow_horizontal = 0
+grow_vertical = 2
+rotation = -0.248289
+scale = Vector2(0.0999994, 0.0999994)
+texture = ExtResource("5_tx27k")
+expand_mode = 3
+
+[node name="Logo" type="TextureRect" parent="."]
+z_index = -1
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -629.0
+offset_top = 35.0
+offset_right = 313.857
+offset_bottom = 35.0
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_lda2a")
+expand_mode = 3
