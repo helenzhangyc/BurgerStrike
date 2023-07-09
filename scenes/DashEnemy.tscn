@@ -1,12 +1,12 @@
-[gd_scene load_steps=11 format=3 uid="uid://c0ujo7raol74o"]
+[gd_scene load_steps=11 format=3 uid="uid://b7g7awrdabfr1"]
 
-[ext_resource type="Script" path="res://scripts/enemies/Enemy.gd" id="1_fimag"]
-[ext_resource type="PackedScene" uid="uid://day6aa3rtaega" path="res://scenes/DamageTweener.tscn" id="2_0ohe0"]
-[ext_resource type="Script" path="res://scripts/ItemDrop.gd" id="3_0lf62"]
-[ext_resource type="Texture2D" uid="uid://cxcm473vxofhp" path="res://sprites/enemy/man1.png" id="3_ftsby"]
-[ext_resource type="Script" path="res://scripts/DropTable.gd" id="3_vfv4k"]
-[ext_resource type="Script" path="res://scripts/resources/BurgerItem.gd" id="6_6haj8"]
-[ext_resource type="PackedScene" path="res://scenes/BobbingTweener.tscn" id="6_i1bhb"]
+[ext_resource type="Script" path="res://scripts/enemies/DashEnemy.gd" id="1_ikb46"]
+[ext_resource type="PackedScene" uid="uid://day6aa3rtaega" path="res://scenes/DamageTweener.tscn" id="2_a1d46"]
+[ext_resource type="PackedScene" path="res://scenes/BobbingTweener.tscn" id="3_0y4gd"]
+[ext_resource type="Texture2D" uid="uid://ctprcorsfahck" path="res://sprites/woman_with_stroller_new.png" id="4_jy2rs"]
+[ext_resource type="Script" path="res://scripts/DropTable.gd" id="5_6mb1c"]
+[ext_resource type="Script" path="res://scripts/ItemDrop.gd" id="6_bmouo"]
+[ext_resource type="Script" path="res://scripts/resources/BurgerItem.gd" id="7_oxb3v"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_c27jd"]
 
@@ -14,7 +14,7 @@
 radius = 20.0
 
 [sub_resource type="Resource" id="Resource_iebqp"]
-script = ExtResource("6_6haj8")
+script = ExtResource("7_oxb3v")
 type = 0
 name = ""
 image_path = ""
@@ -23,12 +23,12 @@ image_path = ""
 collision_layer = 4
 collision_mask = 12
 motion_mode = 1
-script = ExtResource("1_fimag")
+script = ExtResource("1_ikb46")
 
-[node name="DamageTweener" parent="." node_paths=PackedStringArray("target") instance=ExtResource("2_0ohe0")]
+[node name="DamageTweener" parent="." node_paths=PackedStringArray("target") instance=ExtResource("2_a1d46")]
 target = NodePath("../Sprite2D")
 
-[node name="BobbingTweener" parent="." node_paths=PackedStringArray("target") instance=ExtResource("6_i1bhb")]
+[node name="BobbingTweener" parent="." node_paths=PackedStringArray("target") instance=ExtResource("3_0y4gd")]
 magnitude = 2.0
 target = NodePath("../Sprite2D")
 speed = 0.07
@@ -40,7 +40,7 @@ shape = SubResource("CircleShape2D_c27jd")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(2, -4)
 scale = Vector2(0.1, 0.1)
-texture = ExtResource("3_ftsby")
+texture = ExtResource("4_jy2rs")
 region_rect = Rect2(8, 0, 8, 8)
 
 [node name="ShootTimer" type="Timer" parent="."]
@@ -57,10 +57,10 @@ y_sort_enabled = true
 shape = SubResource("CircleShape2D_kbysg")
 
 [node name="DropTable" type="Node" parent="."]
-script = ExtResource("3_vfv4k")
+script = ExtResource("5_6mb1c")
 
 [node name="ItemDrop" type="Node" parent="DropTable"]
-script = ExtResource("3_0lf62")
+script = ExtResource("6_bmouo")
 item = SubResource("Resource_iebqp")
 chance = 0.5
 

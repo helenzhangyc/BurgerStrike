@@ -10,7 +10,8 @@
 [ext_resource type="Resource" uid="uid://h54o44qdgq0w" path="res://resources/items/burger/lettuce.tres" id="8_7fw84"]
 [ext_resource type="Script" path="res://scripts/WaveManager.gd" id="8_qan7t"]
 [ext_resource type="Script" path="res://scripts/WaveSpawn.gd" id="9_jy4ro"]
-[ext_resource type="Texture2D" uid="uid://d0q48bvpfafix" path="res://sprites/map.png" id="10_hxebl"]
+[ext_resource type="Texture2D" uid="uid://mcng3a234ys5" path="res://sprites/map.png" id="10_hxebl"]
+[ext_resource type="PackedScene" uid="uid://b7g7awrdabfr1" path="res://scenes/DashEnemy.tscn" id="10_so26v"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lrw20"]
 texture = ExtResource("2_4uj7p")
@@ -320,7 +321,7 @@ script = ExtResource("8_qan7t")
 
 [node name="WaveSpawn" type="Node" parent="WaveManager/Waves/1"]
 script = ExtResource("9_jy4ro")
-enemy = ExtResource("4_vfbub")
+enemy = ExtResource("10_so26v")
 count = 5
 
 [node name="SpawnLocations" type="Node" parent="WaveManager"]

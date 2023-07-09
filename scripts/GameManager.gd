@@ -5,7 +5,7 @@ extends Node2D
 
 @onready var signal_bus = get_node("/root/SignalBus")
 @onready var shooter = load("res://scripts/Shooter.gd").new()
-
+s
 func _ready():
 	signal_bus.bullet_shoot.connect(_on_bullet_shoot)
 	signal_bus.bullet_shoot_player.connect(_on_bullet_shoot_player)
