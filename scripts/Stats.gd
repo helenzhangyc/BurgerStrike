@@ -27,7 +27,7 @@ func compute():
 		
 		match item.type:
 			ingrs.Ingredients.LETTUCE:
-				attack_speed-=0.5
+				attack_speed-=0.3
 			ingrs.Ingredients.TOMATO:
 				speed+=20	
 			ingrs.Ingredients.CARROT:
