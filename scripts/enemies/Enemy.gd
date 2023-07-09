@@ -63,11 +63,14 @@ func die():
 	var drops = drop_table.get_drop()
 	for drop in drops:
 		# TODO technically drop spawnning code should go somewhere else
+		const DROP_OFFSET = 20
+
+		var rand_x = (-DROP_OFFSET/2.0) + randi() % 100 / 100.0 * DROP_OFFSET
+		var rand_y = (-DROP_OFFSET/2.0) + randi() % 100 / 100.0 * DROP_OFFSET
 
 		var inst = pickup_item_scene.instantiate()
 		# print("instantiate bullet", inst)
-		inst.global_position = global_position
-		print(inst)
+		inst.global_position = global_position + Vector2(rand_x, rand_y)
 		inst.item = drop
 		globals.drop_container.add_child(inst)
 
