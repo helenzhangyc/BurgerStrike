@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dfhf63y7faxrs"
-path="res://.godot/imported/mustard_bullet.png-99ce3263c36347ae12a53b903e9289b7.ctex"
+uid="uid://duvfgqo7g1lki"
+path="res://.godot/imported/bottom.PNG-9567fb4754cc616b72ae90b8b4d2f6e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/mustard_bullet.png"
-dest_files=["res://.godot/imported/mustard_bullet.png-99ce3263c36347ae12a53b903e9289b7.ctex"]
+source_file="res://sprites/player/mid/bottom.PNG"
+dest_files=["res://.godot/imported/bottom.PNG-9567fb4754cc616b72ae90b8b4d2f6e5.ctex"]
 
 [params]
 

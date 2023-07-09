@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://db8nx14lurgqp"
-path="res://.godot/imported/Background.PNG-4eaa2d669317aadc6d51a3c44d4fe9aa.ctex"
+uid="uid://cvw26l3jtj418"
+path="res://.godot/imported/lettuce.PNG-ae8248c9dcb4a59b57cb07745b119624.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/burger_some_things/Background.PNG"
-dest_files=["res://.godot/imported/Background.PNG-4eaa2d669317aadc6d51a3c44d4fe9aa.ctex"]
+source_file="res://sprites/player/mid/lettuce.PNG"
+dest_files=["res://.godot/imported/lettuce.PNG-ae8248c9dcb4a59b57cb07745b119624.ctex"]
 
 [params]
 

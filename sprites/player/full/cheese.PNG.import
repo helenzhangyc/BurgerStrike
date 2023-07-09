@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkavriw8wtvwj"
-path="res://.godot/imported/top.PNG-eed28b748f29d97888815022edf81698.ctex"
+uid="uid://bw58dm5hcokah"
+path="res://.godot/imported/cheese.PNG-75b43ccbf5e6ae4083aa070b1ded35cc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/burger_lots_of_things/top.PNG"
-dest_files=["res://.godot/imported/top.PNG-eed28b748f29d97888815022edf81698.ctex"]
+source_file="res://sprites/player/full/cheese.PNG"
+dest_files=["res://.godot/imported/cheese.PNG-75b43ccbf5e6ae4083aa070b1ded35cc.ctex"]
 
 [params]
 

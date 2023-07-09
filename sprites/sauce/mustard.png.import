@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0jjfxd066ywn"
-path="res://.godot/imported/Selection Mask.PNG-9ad4e1befbba92c31e2423ccea722c5b.ctex"
+uid="uid://b4s5xte502ljf"
+path="res://.godot/imported/mustard.png-e1932bddf24696f6c5dcb5df336e5581.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/burger_lots_of_things/Selection Mask.PNG"
-dest_files=["res://.godot/imported/Selection Mask.PNG-9ad4e1befbba92c31e2423ccea722c5b.ctex"]
+source_file="res://sprites/sauce/mustard.png"
+dest_files=["res://.godot/imported/mustard.png-e1932bddf24696f6c5dcb5df336e5581.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://csnrnr4cijf5o"
-path="res://.godot/imported/patty.PNG-d173cdd6becf5c0b0f5356f3b329f5ae.ctex"
+uid="uid://rx70621fe1d3"
+path="res://.godot/imported/top.PNG-313511aef651106406e0423e16d68d34.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/burger_lots_of_things/patty.PNG"
-dest_files=["res://.godot/imported/patty.PNG-d173cdd6becf5c0b0f5356f3b329f5ae.ctex"]
+source_file="res://sprites/player/full/top.PNG"
+dest_files=["res://.godot/imported/top.PNG-313511aef651106406e0423e16d68d34.ctex"]
 
 [params]
 
