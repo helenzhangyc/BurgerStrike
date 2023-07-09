@@ -34,6 +34,8 @@ func _process(delta):
 		var bullet = $Shooter.use_bullet()
 		# print("shooting bullet", bullet)
 
+		$AttackSFX.play_sound()
+
 		var inst = bullet_scene.instantiate()
 		inst.sauce_item = bullet
 		# print("instantiate bullet", inst)
@@ -60,6 +62,8 @@ func _physics_process(delta):
 			if area.get_parent() is Enemy:
 				
 				took_damage.emit()
+
+				$DamageSFX.play_sound()
 
 				if $Inventory.remove_item_rand() == null:
 					pass

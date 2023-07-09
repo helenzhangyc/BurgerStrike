@@ -42,8 +42,10 @@ func _on_area_entered(area):
 	if alive:
 		if area is PlayerBullet:
 			took_damage.emit()
+			$HitSFX.play_sound()
 			health-=1
 			if health<=0:
+				$DeathSFX.play_sound()
 				die()
 	
 func _on_shoot_timer_timeout():
