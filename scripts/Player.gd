@@ -10,6 +10,8 @@ var iframe_timer
 @onready var globals = get_node("/root/Globals")
 var attack_timer = 100
 
+signal took_damage
+
 func _ready():
 	# register self to be the player
 	if globals.player == null:
@@ -56,6 +58,8 @@ func _physics_process(delta):
 		for area in $Area2D.get_overlapping_areas():
 			if area.get_parent() is Enemy:
 				
+				took_damage.emit()
+
 				if $Inventory.remove_item_rand() == null:
 					pass
 				else:

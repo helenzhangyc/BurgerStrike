@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://c0ujo7raol74o"]
 
 [ext_resource type="Script" path="res://scripts/Enemy.gd" id="1_bvujv"]
-[ext_resource type="Script" path="res://scripts/DamageTweener.gd" id="2_snaw7"]
+[ext_resource type="PackedScene" uid="uid://baj4rco875n5j" path="res://scenes/DamageTweener.tscn" id="2_0ohe0"]
 [ext_resource type="Script" path="res://scripts/ItemDrop.gd" id="3_0lf62"]
 [ext_resource type="Texture2D" uid="uid://cxcm473vxofhp" path="res://sprites/enemy/man1.png" id="3_ftsby"]
 [ext_resource type="Script" path="res://scripts/DropTable.gd" id="3_vfv4k"]
@@ -25,8 +25,7 @@ collision_mask = 12
 motion_mode = 1
 script = ExtResource("1_bvujv")
 
-[node name="DamageTweener" type="Node" parent="." node_paths=PackedStringArray("target")]
-script = ExtResource("2_snaw7")
+[node name="DamageTweener" parent="." node_paths=PackedStringArray("target") instance=ExtResource("2_0ohe0")]
 target = NodePath("../Sprite2D")
 
 [node name="BobbingTweener" parent="." node_paths=PackedStringArray("target") instance=ExtResource("6_i1bhb")]
