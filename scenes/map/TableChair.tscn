@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cci1qwbp5k0uw"]
+
+[ext_resource type="Texture2D" uid="uid://u1tw4h31oay6" path="res://sprites/table.png" id="1_d3whp"]
+
+[node name="TableChair" type="Sprite2D"]
+texture = ExtResource("1_d3whp")

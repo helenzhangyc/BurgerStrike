@@ -1,9 +1,9 @@
-[gd_scene load_steps=19 format=3 uid="uid://djsyenkottqv0"]
+[gd_scene load_steps=19 format=3 uid="uid://0v8332ino1gs"]
 
 [ext_resource type="Script" path="res://scripts/enemies/DashEnemy.gd" id="1_ikb46"]
 [ext_resource type="Script" path="res://scripts/RandomAudioPlayer.gd" id="2_4sdgc"]
 [ext_resource type="PackedScene" uid="uid://baj4rco875n5j" path="res://scenes/DamageTweener.tscn" id="2_a1d46"]
-[ext_resource type="PackedScene" path="res://scenes/BobbingTweener.tscn" id="3_0y4gd"]
+[ext_resource type="PackedScene" uid="uid://c2mxgonifbyx4" path="res://scenes/BobbingTweener.tscn" id="3_0y4gd"]
 [ext_resource type="AudioStream" uid="uid://ckrvjvnkhsayt" path="res://audio/sfx/hit_01.wav" id="3_4bpe5"]
 [ext_resource type="AudioStream" uid="uid://cdlmtqtmtpmai" path="res://audio/sfx/hit_02.wav" id="4_jdwva"]
 [ext_resource type="Texture2D" uid="uid://ctprcorsfahck" path="res://sprites/woman_with_stroller_new.png" id="4_jy2rs"]

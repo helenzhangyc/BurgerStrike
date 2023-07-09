@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://ctbe15r3nw1ey"]
+[gd_scene load_steps=19 format=3 uid="uid://ctbe15r3nw1ey"]
 
 [ext_resource type="Script" path="res://scripts/GameManager.gd" id="1_p5wqo"]
 [ext_resource type="Texture2D" uid="uid://tpf23uytvwei" path="res://sprites/tileset.png" id="2_4uj7p"]
@@ -10,9 +10,12 @@
 [ext_resource type="Resource" uid="uid://h54o44qdgq0w" path="res://resources/items/burger/lettuce.tres" id="8_7fw84"]
 [ext_resource type="Script" path="res://scripts/WaveManager.gd" id="8_qan7t"]
 [ext_resource type="Script" path="res://scripts/WaveSpawn.gd" id="9_jy4ro"]
-[ext_resource type="Texture2D" uid="uid://mcng3a234ys5" path="res://sprites/map.png" id="10_hxebl"]
-[ext_resource type="PackedScene" uid="uid://djsyenkottqv0" path="res://scenes/DashEnemy.tscn" id="10_so26v"]
+[ext_resource type="Texture2D" uid="uid://bdidfxlk2bbd" path="res://sprites/map.png" id="10_hxebl"]
+[ext_resource type="PackedScene" uid="uid://0v8332ino1gs" path="res://scenes/DashEnemy.tscn" id="10_so26v"]
 [ext_resource type="AudioStream" uid="uid://ddrv3f7qckn8c" path="res://audio/music/bgm.mp3" id="13_teb2s"]
+
+
+[ext_resource type="PackedScene" uid="uid://cci1qwbp5k0uw" path="res://scenes/map/TableChair.tscn" id="14_7fqfw"]
 [ext_resource type="PackedScene" uid="uid://mw6a7xmk22ig" path="res://scenes/KidEnemy.tscn" id="14_fqrwf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lrw20"]
@@ -299,21 +302,6 @@ layer_1/tile_data = PackedInt32Array(262142, 0, 19, 262143, 65536, 19, 196608, 1
 [node name="Player" parent="." instance=ExtResource("3_wbqv4")]
 position = Vector2(-58, 0)
 
-[node name="LettuceItem" parent="." instance=ExtResource("6_n4xlb")]
-position = Vector2(47, 37)
-item = ExtResource("8_7fw84")
-
-[node name="KetchupItem" parent="." instance=ExtResource("6_n4xlb")]
-position = Vector2(74, 2)
-item = ExtResource("6_glkdr")
-
-[node name="KetchupItem2" parent="." instance=ExtResource("6_n4xlb")]
-position = Vector2(-26, 35)
-item = ExtResource("7_7b8a7")
-
-[node name="Enemy" parent="." instance=ExtResource("4_vfbub")]
-position = Vector2(19, -24)
-
 [node name="WaveManager" type="Node" parent="."]
 script = ExtResource("8_qan7t")
 
@@ -345,6 +333,11 @@ script = ExtResource("9_jy4ro")
 enemy = ExtResource("4_vfbub")
 count = 5
 
+[node name="WaveSpawn3" type="Node" parent="WaveManager/Waves/3"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("4_vfbub")
+count = 3
+
 [node name="WaveSpawn2" type="Node" parent="WaveManager/Waves/3"]
 script = ExtResource("9_jy4ro")
 enemy = ExtResource("10_so26v")
@@ -355,7 +348,12 @@ count = 3
 [node name="WaveSpawn" type="Node" parent="WaveManager/Waves/4"]
 script = ExtResource("9_jy4ro")
 enemy = ExtResource("4_vfbub")
-count = 10
+count = 5
+
+[node name="WaveSpawn2" type="Node" parent="WaveManager/Waves/4"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("4_vfbub")
+count = 5
 
 [node name="5" type="Node" parent="WaveManager/Waves"]
 
@@ -376,13 +374,227 @@ script = ExtResource("9_jy4ro")
 enemy = ExtResource("10_so26v")
 count = 7
 
+[node name="7" type="Node" parent="WaveManager/Waves"]
+
+[node name="WaveSpawn" type="Node" parent="WaveManager/Waves/7"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("14_fqrwf")
+count = 3
+
+[node name="WaveSpawn2" type="Node" parent="WaveManager/Waves/7"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("14_fqrwf")
+count = 3
+
+[node name="WaveSpawn3" type="Node" parent="WaveManager/Waves/7"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("14_fqrwf")
+count = 3
+
+[node name="WaveSpawn4" type="Node" parent="WaveManager/Waves/7"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("14_fqrwf")
+count = 3
+
+[node name="WaveSpawn5" type="Node" parent="WaveManager/Waves/7"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("14_fqrwf")
+count = 3
+
+[node name="8" type="Node" parent="WaveManager/Waves"]
+
+[node name="WaveSpawn" type="Node" parent="WaveManager/Waves/8"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("4_vfbub")
+count = 5
+
+[node name="WaveSpawn2" type="Node" parent="WaveManager/Waves/8"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("4_vfbub")
+count = 5
+
+[node name="WaveSpawn3" type="Node" parent="WaveManager/Waves/8"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("4_vfbub")
+count = 5
+
+[node name="WaveSpawn4" type="Node" parent="WaveManager/Waves/8"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("14_fqrwf")
+count = 5
+
+[node name="9" type="Node" parent="WaveManager/Waves"]
+
+[node name="WaveSpawn" type="Node" parent="WaveManager/Waves/9"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("10_so26v")
+count = 2
+
+[node name="WaveSpawn2" type="Node" parent="WaveManager/Waves/9"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("10_so26v")
+count = 2
+
+[node name="WaveSpawn3" type="Node" parent="WaveManager/Waves/9"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("10_so26v")
+count = 2
+
+[node name="WaveSpawn4" type="Node" parent="WaveManager/Waves/9"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("10_so26v")
+count = 2
+
+[node name="WaveSpawn5" type="Node" parent="WaveManager/Waves/9"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("10_so26v")
+count = 2
+
+[node name="WaveSpawn6" type="Node" parent="WaveManager/Waves/9"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("10_so26v")
+count = 2
+
+[node name="10" type="Node" parent="WaveManager/Waves"]
+
+[node name="WaveSpawn" type="Node" parent="WaveManager/Waves/10"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("10_so26v")
+count = 10
+
+[node name="WaveSpawn2" type="Node" parent="WaveManager/Waves/10"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("14_fqrwf")
+count = 10
+
+[node name="WaveSpawn3" type="Node" parent="WaveManager/Waves/10"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("10_so26v")
+count = 10
+
+[node name="11" type="Node" parent="WaveManager/Waves"]
+
+[node name="WaveSpawn" type="Node" parent="WaveManager/Waves/11"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("10_so26v")
+count = 20
+
+[node name="12" type="Node" parent="WaveManager/Waves"]
+
+[node name="WaveSpawn" type="Node" parent="WaveManager/Waves/12"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("4_vfbub")
+count = 20
+
+[node name="WaveSpawn2" type="Node" parent="WaveManager/Waves/12"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("10_so26v")
+count = 20
+
+[node name="13" type="Node" parent="WaveManager/Waves"]
+
+[node name="WaveSpawn" type="Node" parent="WaveManager/Waves/13"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("4_vfbub")
+count = 20
+
+[node name="WaveSpawn3" type="Node" parent="WaveManager/Waves/13"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("4_vfbub")
+count = 20
+
+[node name="WaveSpawn2" type="Node" parent="WaveManager/Waves/13"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("10_so26v")
+count = 20
+
+[node name="WaveSpawn4" type="Node" parent="WaveManager/Waves/13"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("10_so26v")
+count = 20
+
+[node name="14" type="Node" parent="WaveManager/Waves"]
+
+[node name="WaveSpawn" type="Node" parent="WaveManager/Waves/14"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("4_vfbub")
+count = 20
+
+[node name="WaveSpawn3" type="Node" parent="WaveManager/Waves/14"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("4_vfbub")
+count = 20
+
+[node name="WaveSpawn5" type="Node" parent="WaveManager/Waves/14"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("4_vfbub")
+count = 20
+
+[node name="WaveSpawn6" type="Node" parent="WaveManager/Waves/14"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("4_vfbub")
+count = 20
+
+[node name="WaveSpawn2" type="Node" parent="WaveManager/Waves/14"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("10_so26v")
+count = 20
+
+[node name="WaveSpawn4" type="Node" parent="WaveManager/Waves/14"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("10_so26v")
+count = 20
+
+[node name="WaveSpawn7" type="Node" parent="WaveManager/Waves/14"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("10_so26v")
+count = 20
+
+[node name="WaveSpawn8" type="Node" parent="WaveManager/Waves/14"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("10_so26v")
+count = 20
+
+[node name="WaveSpawn9" type="Node" parent="WaveManager/Waves/14"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("10_so26v")
+count = 2
+
+[node name="WaveSpawn10" type="Node" parent="WaveManager/Waves/14"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("10_so26v")
+count = 2
+
+[node name="WaveSpawn11" type="Node" parent="WaveManager/Waves/14"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("10_so26v")
+count = 2
+
+[node name="WaveSpawn12" type="Node" parent="WaveManager/Waves/14"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("10_so26v")
+count = 2
+
+[node name="WaveSpawn13" type="Node" parent="WaveManager/Waves/14"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("10_so26v")
+count = 2
+
+[node name="WaveSpawn14" type="Node" parent="WaveManager/Waves/14"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("10_so26v")
+count = 2
+
 [node name="SpawnLocations" type="Node" parent="WaveManager"]
 
 [node name="Spawn" type="Node2D" parent="WaveManager/SpawnLocations" groups=["spawn"]]
-position = Vector2(-124, 2)
+position = Vector2(-3, -215)
 
 [node name="Spawn2" type="Node2D" parent="WaveManager/SpawnLocations" groups=["spawn"]]
-position = Vector2(117, 0)
+position = Vector2(238, 70)
+
+[node name="Spawn3" type="Node2D" parent="WaveManager/SpawnLocations" groups=["spawn"]]
+position = Vector2(-182, 225)
 
 [node name="SpawnTimer" type="Timer" parent="WaveManager"]
 wait_time = 2.0
@@ -398,24 +610,62 @@ navigation_polygon = SubResource("NavigationPolygon_rpj6d")
 [node name="StaticBody2D" type="StaticBody2D" parent="Map"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Map/StaticBody2D"]
-polygon = PackedVector2Array(-595, -845, -610, -595, 410, -520, 485, -810)
+position = Vector2(-5, 5)
+polygon = PackedVector2Array(-640, -855, -640, -550, 475, -470, 490, -850)
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Map/StaticBody2D"]
-polygon = PackedVector2Array(-610, 130, -615, 500, -225, 550, -285, 140)
+polygon = PackedVector2Array(-670, 105, -665, 575, -180, 600, -255, 100)
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Map/StaticBody2D"]
-polygon = PackedVector2Array(345, -130, 310, 580, 620, 590, 700, -75)
+polygon = PackedVector2Array(310, -150, 290, 645, 695, 630, 740, -130)
 
 [node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Map/StaticBody2D"]
-polygon = PackedVector2Array(-205, -1245, -230, -1125, -1170, -1080, -1130, 1250, -685, 1240, -635, 1055, 950, 1020, 945, 535, 1220, 570, 1260, 210, 1140, 180, 1075, -1150, 235, -1115, 200, -1280, 1260, -1260, 1360, 35, 1355, 1310, -1410, 1360, -1385, -1375, -205, -1380)
+polygon = PackedVector2Array(-205, -1245, -215, -1080, -1115, -1015, -1075, 1205, -705, 1230, -685, 1040, 895, 980, 915, 540, 1230, 495, 1235, 200, 1075, 190, 1010, -1055, 200, -1050, 200, -1280, 1260, -1260, 1360, 35, 1355, 1310, -1410, 1360, -1385, -1375, -205, -1380)
 
 [node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="Map/StaticBody2D"]
 polygon = PackedVector2Array(-215, -1145, 240, -1115, 220, -1265, -215, -1250)
 
+[node name="Enviro" type="Node2D" parent="Map"]
+
+[node name="TableChair" parent="Map/Enviro" instance=ExtResource("14_7fqfw")]
+position = Vector2(-420, -685)
+
+[node name="TableChair2" parent="Map/Enviro" instance=ExtResource("14_7fqfw")]
+position = Vector2(200, -680)
+
+[node name="TableChair3" parent="Map/Enviro" instance=ExtResource("14_7fqfw")]
+position = Vector2(-435, 310)
+
+[node name="TableChair4" parent="Map/Enviro" instance=ExtResource("14_7fqfw")]
+position = Vector2(510, 0)
+
+[node name="TableChair5" parent="Map/Enviro" instance=ExtResource("14_7fqfw")]
+position = Vector2(500, 405)
+
+[node name="Items" type="Node2D" parent="Map"]
+
+[node name="LettuceItem" parent="Map/Items" instance=ExtResource("6_n4xlb")]
+position = Vector2(665, 420)
+scale = Vector2(5, 5)
+item = ExtResource("8_7fw84")
+
+[node name="KetchupItem" parent="Map/Items" instance=ExtResource("6_n4xlb")]
+position = Vector2(365, 35)
+scale = Vector2(5, 5)
+item = ExtResource("6_glkdr")
+
+[node name="KetchupItem2" parent="Map/Items" instance=ExtResource("6_n4xlb")]
+position = Vector2(-580, 330)
+scale = Vector2(5, 5)
+item = ExtResource("6_glkdr")
+
+[node name="MustardItem" parent="Map/Items" instance=ExtResource("6_n4xlb")]
+position = Vector2(360, -865)
+scale = Vector2(5, 5)
+item = ExtResource("7_7b8a7")
+
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(-5, -55)
 stream = ExtResource("13_teb2s")
 volume_db = -20.0
 autoplay = true
-
-[node name="KidEnemy" parent="." instance=ExtResource("14_fqrwf")]
-position = Vector2(-53, -64)

@@ -8,3 +8,5 @@ signal pickup_burger_item(item)
 
 signal use_sauce_item()
 signal remove_burger_item(index)
+
+signal enemy_died()

@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scripts/enemies/Enemy.gd" id="1_85gew"]
 [ext_resource type="PackedScene" uid="uid://baj4rco875n5j" path="res://scenes/DamageTweener.tscn" id="2_j06lj"]
 [ext_resource type="PackedScene" uid="uid://c2mxgonifbyx4" path="res://scenes/BobbingTweener.tscn" id="3_vramf"]
-[ext_resource type="Texture2D" uid="uid://buw3wqnn5p27b" path="res://sprites/enemy/kid.png" id="4_jwwjx"]
+[ext_resource type="Texture2D" uid="uid://dcnmgpur3v62e" path="res://sprites/enemy/kid.png" id="4_jwwjx"]
 [ext_resource type="Script" path="res://scripts/DropTable.gd" id="5_x3myc"]
 [ext_resource type="Script" path="res://scripts/ItemDrop.gd" id="6_jhgt6"]
 [ext_resource type="Resource" uid="uid://hqsabyijgfk0" path="res://resources/items/burger/carrot.tres" id="7_6effc"]

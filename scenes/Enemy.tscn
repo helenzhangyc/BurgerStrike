@@ -5,7 +5,7 @@
 [ext_resource type="Script" path="res://scripts/ItemDrop.gd" id="3_0lf62"]
 [ext_resource type="Texture2D" uid="uid://cxcm473vxofhp" path="res://sprites/enemy/man1.png" id="3_ftsby"]
 [ext_resource type="Script" path="res://scripts/DropTable.gd" id="3_vfv4k"]
-[ext_resource type="PackedScene" path="res://scenes/BobbingTweener.tscn" id="6_i1bhb"]
+[ext_resource type="PackedScene" uid="uid://c2mxgonifbyx4" path="res://scenes/BobbingTweener.tscn" id="6_i1bhb"]
 [ext_resource type="Resource" uid="uid://h54o44qdgq0w" path="res://resources/items/burger/lettuce.tres" id="7_j8bwl"]
 [ext_resource type="Script" path="res://scripts/RandomAudioPlayer.gd" id="8_5t8f3"]
 [ext_resource type="Resource" uid="uid://gk7qypk05u23" path="res://resources/items/sauce/ketchup.tres" id="8_tda6b"]

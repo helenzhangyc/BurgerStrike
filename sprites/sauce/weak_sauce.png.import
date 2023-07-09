@@ -2,18 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-
-uid="uid://b63f3vyyi1nue"
-
-path="res://.godot/imported/4e6debc4-24e0-40a9-b471-2cd752e16d74.jpeg-26085739d922693e5b295cd1330df300.ctex"
+uid="uid://c3rmqxxkufc0h"
+path="res://.godot/imported/weak_sauce.png-800d3387081d556cd127d204ae70d177.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/4e6debc4-24e0-40a9-b471-2cd752e16d74.jpeg"
-dest_files=["res://.godot/imported/4e6debc4-24e0-40a9-b471-2cd752e16d74.jpeg-26085739d922693e5b295cd1330df300.ctex"]
+source_file="res://sprites/sauce/weak_sauce.png"
+dest_files=["res://.godot/imported/weak_sauce.png-800d3387081d556cd127d204ae70d177.ctex"]
 
 [params]
 
