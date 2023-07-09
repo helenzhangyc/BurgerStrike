@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://m73rg7pllr0c"]
+[gd_scene load_steps=3 format=3 uid="uid://drrf78r2t3v22"]
 
-[ext_resource type="PackedScene" uid="uid://ckjxr026ls76t" path="res://scenes/levels/TitleUI.tscn" id="1_tlrdu"]
+[ext_resource type="PackedScene" path="res://scenes/levels/TitleUI.tscn" id="1_tlrdu"]
+[ext_resource type="AudioStream" uid="uid://dlh1cvlb87j5t" path="res://audio/music/mainmenu.mp3" id="2_6diuk"]
 
 [node name="Title" type="Node2D"]
 
@@ -9,3 +10,8 @@
 [node name="CanvasLayer" type="CanvasLayer" parent="Camera2D"]
 
 [node name="TitleUI" parent="Camera2D/CanvasLayer" instance=ExtResource("1_tlrdu")]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_6diuk")
+volume_db = -20.0
+autoplay = true

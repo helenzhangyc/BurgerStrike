@@ -11,7 +11,7 @@
 [ext_resource type="Script" path="res://scripts/WaveManager.gd" id="8_qan7t"]
 [ext_resource type="Script" path="res://scripts/WaveSpawn.gd" id="9_jy4ro"]
 [ext_resource type="Texture2D" uid="uid://bdidfxlk2bbd" path="res://sprites/map.png" id="10_hxebl"]
-[ext_resource type="PackedScene" uid="uid://0v8332ino1gs" path="res://scenes/DashEnemy.tscn" id="10_so26v"]
+[ext_resource type="PackedScene" uid="uid://djsyenkottqv0" path="res://scenes/DashEnemy.tscn" id="10_so26v"]
 [ext_resource type="AudioStream" uid="uid://ddrv3f7qckn8c" path="res://audio/music/bgm.mp3" id="13_teb2s"]
 [ext_resource type="PackedScene" uid="uid://cci1qwbp5k0uw" path="res://scenes/map/TableChair.tscn" id="14_7fqfw"]
 [ext_resource type="PackedScene" uid="uid://mw6a7xmk22ig" path="res://scenes/KidEnemy.tscn" id="14_fqrwf"]
@@ -280,7 +280,7 @@ vertices = PackedVector2Array(245, -1115, 1065, -1090, 515, -885, -675, -880, 72
 polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 5, 1, 6, 7), PackedInt32Array(2, 1, 5, 8), PackedInt32Array(8, 5, 9, 10), PackedInt32Array(11, 12, 13), PackedInt32Array(14, 15, 7, 6), PackedInt32Array(4, 7, 16), PackedInt32Array(4, 16, 17, 18), PackedInt32Array(19, 18, 17, 20), PackedInt32Array(9, 18, 19, 21), PackedInt32Array(10, 9, 21, 22), PackedInt32Array(13, 0, 3, 11), PackedInt32Array(23, 11, 3), PackedInt32Array(24, 23, 3, 10, 22), PackedInt32Array(24, 22, 20, 17, 25)])
 outlines = Array[PackedVector2Array]([PackedVector2Array(-675, -880, 515, -885, 505, -435, -675, -515), PackedVector2Array(275, -170, 265, 675, 725, 655, 755, -180), PackedVector2Array(-710, 60, -235, 45, -145, 615, -690, 610), PackedVector2Array(-230, -1215, 205, -1235, 245, -1115, 1065, -1090, 1130, 200, 1225, 195, 1250, 555, 935, 515, 915, 995, -680, 1035, -690, 1220, -1105, 1225, -1125, -1090, -195, -1110)])
 
-[node name="Main" type="Node2D"]
+[node name="Main2" type="Node2D"]
 script = ExtResource("1_p5wqo")
 
 [node name="TileMap" type="TileMap" parent="."]

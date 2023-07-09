@@ -1,11 +1,9 @@
-[gd_resource type="Resource" script_class="BurgerItem" load_steps=3 format=3 uid="uid://cieiekpmby3kf"]
+[gd_resource type="Resource" script_class="BurgerItem" load_steps=2 format=3 uid="uid://cieiekpmby3kf"]
 
 [ext_resource type="Script" path="res://scripts/resources/BurgerItem.gd" id="1_8gqee"]
-[ext_resource type="Texture2D" uid="uid://dw34fyektnppr" path="res://sprites/burger/tomato.png" id="1_s6mey"]
 
 [resource]
 script = ExtResource("1_8gqee")
 type = 1
 name = "Tomato"
 image_path = "res://sprites/burger/tomato.png"
-image_texture = ExtResource("1_s6mey")

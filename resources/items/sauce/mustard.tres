@@ -1,15 +1,11 @@
-[gd_resource type="Resource" script_class="SauceItem" load_steps=4 format=3 uid="uid://bfagrrmvbg6dd"]
+[gd_resource type="Resource" script_class="SauceItem" load_steps=2 format=3 uid="uid://bfagrrmvbg6dd"]
 
 [ext_resource type="Script" path="res://scripts/resources/SauceItem.gd" id="1_d5bek"]
-[ext_resource type="Texture2D" uid="uid://dfhf63y7faxrs" path="res://sprites/bullet/mustard_bullet.png" id="1_fbep7"]
-[ext_resource type="Texture2D" uid="uid://b4s5xte502ljf" path="res://sprites/sauce/mustard.png" id="2_0e6kt"]
 
 [resource]
 script = ExtResource("1_d5bek")
 damage = 2
 bullet_sprite = "res://sprites/bullet/mustard_bullet.png"
-bullet_texture = ExtResource("1_fbep7")
 pierce = 1
 name = "Mustard"
 image_path = "res://sprites/sauce/mustard.png"
-image_texture = ExtResource("2_0e6kt")

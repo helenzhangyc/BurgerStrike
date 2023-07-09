@@ -1,6 +1,5 @@
-[gd_resource type="Resource" script_class="BurgerItem" load_steps=3 format=3 uid="uid://h54o44qdgq0w"]
+[gd_resource type="Resource" script_class="BurgerItem" load_steps=2 format=3 uid="uid://h54o44qdgq0w"]
 
-[ext_resource type="Texture2D" uid="uid://comkybd16uyko" path="res://sprites/burger/lettuce.png" id="1_4a0ha"]
 [ext_resource type="Script" path="res://scripts/resources/BurgerItem.gd" id="1_8gqee"]
 
 [resource]
@@ -8,4 +7,3 @@ script = ExtResource("1_8gqee")
 type = 0
 name = "Lettuce"
 image_path = "res://sprites/burger/lettuce.png"
-image_texture = ExtResource("1_4a0ha")

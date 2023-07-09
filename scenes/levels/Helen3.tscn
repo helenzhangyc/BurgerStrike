@@ -268,7 +268,7 @@ texture = ExtResource("2_u4tfx")
 [sub_resource type="TileSet" id="TileSet_tj2i2"]
 sources/0 = SubResource("TileSetAtlasSource_lrw20")
 
-[node name="Main" type="Node2D"]
+[node name="Main2" type="Node2D"]
 script = ExtResource("1_xpv7o")
 
 [node name="TileMap" type="TileMap" parent="."]
