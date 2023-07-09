@@ -15,10 +15,12 @@ func _on_area_entered(area):
 			if area.item is BurgerItem:
 				print("burger item", area.item)
 				signal_bus.pickup_burger_item.emit(area.item)
+				$"../PickupSFX".play_sound()
 				# $"../Inventory".add_item(area.item)
 			elif area.item is SauceItem:
 				print("sauce item", area.item)
 				signal_bus.pickup_sauce_item.emit(area.item)
+				$"../PickupSFX".play_sound()
 				# $"../Shooter".add_bullet(area.item)
 
 			area.queue_free()

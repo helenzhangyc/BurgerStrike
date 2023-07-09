@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://cwre7pomfe73u"]
+[gd_scene load_steps=31 format=3 uid="uid://cwre7pomfe73u"]
 
 [ext_resource type="Script" path="res://scripts/Player.gd" id="1_e2y74"]
 [ext_resource type="PackedScene" uid="uid://xpxg6ptqabq1" path="res://scenes/HUD.tscn" id="2_2ds4w"]
@@ -15,7 +15,6 @@
 [ext_resource type="Resource" uid="uid://h54o44qdgq0w" path="res://resources/items/burger/lettuce.tres" id="10_04q36"]
 [ext_resource type="PackedScene" uid="uid://bb3yr2vgs54hk" path="res://scenes/particles/WalkParticles.tscn" id="10_n4dqa"]
 [ext_resource type="Resource" uid="uid://cby46r3r2nmfy" path="res://resources/items/sauce/weak_sauce.tres" id="12_ou8su"]
-[ext_resource type="Script" path="res://scripts/PickupSFX.gd" id="14_a3p7l"]
 [ext_resource type="Script" path="res://scripts/RandomAudioPlayer.gd" id="14_n6fgr"]
 [ext_resource type="AudioStream" uid="uid://bqectoi84qbcx" path="res://audio/sfx/pickup_01.wav" id="15_6lbhi"]
 [ext_resource type="Texture2D" uid="uid://rlhpcg0hq3a1" path="res://sprites/player/empty/top.PNG" id="15_eyn5n"]
@@ -146,10 +145,7 @@ shape = SubResource("CircleShape2D_w77tt")
 [node name="Stats" type="Node" parent="."]
 script = ExtResource("7_hndj4")
 
-[node name="PickupSFX" type="Node" parent="."]
-script = ExtResource("14_a3p7l")
-
-[node name="PickupSFX" type="AudioStreamPlayer2D" parent="PickupSFX"]
+[node name="PickupSFX" type="AudioStreamPlayer2D" parent="."]
 script = ExtResource("14_n6fgr")
 sounds = Array[AudioStreamWAV]([ExtResource("15_6lbhi"), ExtResource("16_6dla0"), ExtResource("17_b4ihm")])
 

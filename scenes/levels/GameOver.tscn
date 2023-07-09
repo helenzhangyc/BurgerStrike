@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://bowckl8bbn2hx"]
+[gd_scene load_steps=7 format=3 uid="uid://bowckl8bbn2hx"]
 
 [ext_resource type="Texture2D" uid="uid://m3xis5vtfegf" path="res://sprites/gameover/gameover.PNG" id="1_qedoy"]
 [ext_resource type="Texture2D" uid="uid://dg18lpe56ei6h" path="res://sprites/gameover/quit.PNG" id="2_f27fu"]
 [ext_resource type="Script" path="res://scripts/ui/Quit.gd" id="3_dshuy"]
 [ext_resource type="Texture2D" uid="uid://p8p7s2i6yake" path="res://sprites/gameover/restart.PNG" id="4_japar"]
 [ext_resource type="Script" path="res://scripts/ui/Restart.gd" id="5_mxsvp"]
+[ext_resource type="AudioStream" uid="uid://d1ux8lpfs51pi" path="res://audio/sfx/game_over_01.wav" id="6_kn1ak"]
 
 [node name="GameOver" type="Node2D"]
 
@@ -28,3 +29,9 @@ offset_right = 308.0
 offset_bottom = 510.0
 texture_normal = ExtResource("4_japar")
 script = ExtResource("5_mxsvp")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(-5, -55)
+stream = ExtResource("6_kn1ak")
+volume_db = -10.0
+autoplay = true
