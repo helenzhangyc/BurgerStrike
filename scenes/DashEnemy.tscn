@@ -13,7 +13,7 @@
 [ext_resource type="AudioStream" uid="uid://bt8xqgfb7houx" path="res://audio/sfx/stroller_death_01.wav" id="6_o48m5"]
 [ext_resource type="AudioStream" uid="uid://dbwmbm36ee2fw" path="res://audio/sfx/stroller_death_02.wav" id="7_fhla2"]
 [ext_resource type="AudioStream" uid="uid://bkgv4y7h1n1mo" path="res://audio/sfx/stroller_death_03.wav" id="8_d706j"]
-[ext_resource type="Resource" uid="uid://bqmoq80j5den7" path="res://resources/items/burger/tomato.tres" id="14_4kq1s"]
+[ext_resource type="Resource" uid="uid://cieiekpmby3kf" path="res://resources/items/burger/tomato.tres" id="14_4kq1s"]
 [ext_resource type="Resource" uid="uid://gk7qypk05u23" path="res://resources/items/sauce/ketchup.tres" id="15_ivbw6"]
 [ext_resource type="Resource" uid="uid://bfagrrmvbg6dd" path="res://resources/items/sauce/mustard.tres" id="16_a2acj"]
 
