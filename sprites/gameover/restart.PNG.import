@@ -2,16 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
+
 uid="uid://c3yolkfnaf1en"
 path="res://.godot/imported/restart.png-f47487dea4efafd4b4a954d1be46eb11.ctex"
+
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
+
 source_file="res://sprites/gameover/restart.png"
 dest_files=["res://.godot/imported/restart.png-f47487dea4efafd4b4a954d1be46eb11.ctex"]
+
 
 [params]
 

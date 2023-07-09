@@ -2,8 +2,10 @@
 
 importer="texture"
 type="CompressedTexture2D"
+
 uid="uid://drkc8tai0ws0q"
 path="res://.godot/imported/quit.png-4a8dc94ac0f815c3715af153da2831e0.ctex"
+
 metadata={
 "vram_texture": false
 }
@@ -12,6 +14,7 @@ metadata={
 
 source_file="res://sprites/gameover/quit.png"
 dest_files=["res://.godot/imported/quit.png-4a8dc94ac0f815c3715af153da2831e0.ctex"]
+
 
 [params]
 

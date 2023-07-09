@@ -88,6 +88,7 @@ script = ExtResource("8_5t8f3")
 sounds = Array[AudioStreamWAV]([ExtResource("9_wh0sq"), ExtResource("10_jefqe"), ExtResource("11_de0kv")])
 
 [node name="DeathSFX" type="AudioStreamPlayer2D" parent="."]
+volume_db = -10.0
 script = ExtResource("8_5t8f3")
 sounds = Array[AudioStreamWAV]([ExtResource("12_m2re7"), ExtResource("13_4oa5e")])
 

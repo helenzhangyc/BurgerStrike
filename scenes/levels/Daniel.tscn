@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://ctbe15r3nw1ey"]
+[gd_scene load_steps=17 format=3 uid="uid://ctbe15r3nw1ey"]
 
 [ext_resource type="Script" path="res://scripts/GameManager.gd" id="1_p5wqo"]
 [ext_resource type="Texture2D" uid="uid://tpf23uytvwei" path="res://sprites/tileset.png" id="2_4uj7p"]
@@ -12,6 +12,7 @@
 [ext_resource type="Script" path="res://scripts/WaveSpawn.gd" id="9_jy4ro"]
 [ext_resource type="Texture2D" uid="uid://mcng3a234ys5" path="res://sprites/map.png" id="10_hxebl"]
 [ext_resource type="PackedScene" uid="uid://djsyenkottqv0" path="res://scenes/DashEnemy.tscn" id="10_so26v"]
+[ext_resource type="AudioStream" uid="uid://ddrv3f7qckn8c" path="res://audio/music/bgm.mp3" id="13_teb2s"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lrw20"]
 texture = ExtResource("2_4uj7p")
@@ -371,3 +372,8 @@ polygon = PackedVector2Array(-205, -1245, -230, -1125, -1170, -1080, -1130, 1250
 
 [node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="Map/StaticBody2D"]
 polygon = PackedVector2Array(-215, -1145, 240, -1115, 220, -1265, -215, -1250)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("13_teb2s")
+volume_db = -20.0
+autoplay = true
