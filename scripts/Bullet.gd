@@ -16,10 +16,11 @@ func _ready():
 	damage = sauce_item.damage
 
 	# set the sprite
-	var image = Image.load_from_file(sauce_item.bullet_sprite)
-	var texture = ImageTexture.create_from_image(image)
-	print("shooting ",sauce_item.bullet_sprite)
-	$Sprite2D.texture = texture
+	# var image = Image.load_from_file(sauce_item.bullet_sprite)
+	# var texture = ImageTexture.create_from_image(image)
+	# print("shooting ",sauce_item.bullet_sprite)
+	$Sprite2D.texture = sauce_item.bullet_texture
+	#$Sprite2D.scale = Vector2(0.05, 0.05)
 
 func _physics_process(delta):
 	global_position += dir.rotated(rotation + PI/2) * speed * delta

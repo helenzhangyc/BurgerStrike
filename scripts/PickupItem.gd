@@ -4,10 +4,10 @@ class_name PickupItem extends Area2D
 
 func _ready():
 	# set the sprite
-	print("loading", item.image_path)
-	var image = Image.load_from_file(item.image_path)
-	var texture = ImageTexture.create_from_image(image)
-	$Sprite2D.texture = texture
+	#print("loading", item.image_path)
+	#var image = Image.load_from_file(item.image_path)
+	#var texture = ImageTexture.create_from_image(image)
+	$Sprite2D.texture = item.image_texture
 
 # func _on_area_entered(area):
 # 	print("pickupitem area entered")
