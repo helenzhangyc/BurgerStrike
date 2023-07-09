@@ -68,7 +68,7 @@ func _physics_process(delta):
 
 				var remove_index = $Inventory.remove_item_rand()
 				if remove_index == null:
-					pass
+					get_tree().change_scene_to_file("res://scenes/levels/GameOver.tscn")	
 				else:
 					signal_bus.remove_burger_item.emit(remove_index)
 					print($Inventory.items)
