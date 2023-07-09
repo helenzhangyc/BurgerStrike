@@ -34,6 +34,7 @@ func _process(delta):
 		var bullet = $Shooter.use_bullet()
 		# print("shooting bullet", bullet)
 
+		signal_bus.use_sauce_item.emit()
 		$AttackSFX.play_sound()
 
 		var inst = bullet_scene.instantiate()

@@ -321,8 +321,20 @@ script = ExtResource("8_qan7t")
 
 [node name="WaveSpawn" type="Node" parent="WaveManager/Waves/1"]
 script = ExtResource("9_jy4ro")
-enemy = ExtResource("10_so26v")
+enemy = ExtResource("4_vfbub")
 count = 5
+
+[node name="2" type="Node" parent="WaveManager/Waves"]
+
+[node name="WaveSpawn" type="Node" parent="WaveManager/Waves/2"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("4_vfbub")
+count = 5
+
+[node name="WaveSpawn2" type="Node" parent="WaveManager/Waves/2"]
+script = ExtResource("9_jy4ro")
+enemy = ExtResource("10_so26v")
+count = 3
 
 [node name="SpawnLocations" type="Node" parent="WaveManager"]
 

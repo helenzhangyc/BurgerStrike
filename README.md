@@ -15,5 +15,3 @@ Burger shoot 'em up created for [GMTK JAM 2023](https://itch.io/jam/gmtk-2023)
 You are a burger that has come alive! Collect ingredients to become the *perfect* burger. Spray the human enemies with *sauce*.
 
 Built using the Godot game engine.
-
-
