@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1jvp30wcwux3"
-path="res://.godot/imported/2f2ac5a1-00b8-414c-80cb-86f3c5ba3055.jpeg-ef4b72557533579c7e207e24a8215e6a.ctex"
+uid="uid://cy4ibi26bgkbb"
+path="res://.godot/imported/carrot.png-07dacdc4ed9663143bb5a1c3c8d5e721.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/2f2ac5a1-00b8-414c-80cb-86f3c5ba3055.jpeg"
-dest_files=["res://.godot/imported/2f2ac5a1-00b8-414c-80cb-86f3c5ba3055.jpeg-ef4b72557533579c7e207e24a8215e6a.ctex"]
+source_file="res://sprites/burger/carrot.png"
+dest_files=["res://.godot/imported/carrot.png-07dacdc4ed9663143bb5a1c3c8d5e721.ctex"]
 
 [params]
 

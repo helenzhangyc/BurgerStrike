@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1jvp30wcwux3"
-path="res://.godot/imported/2f2ac5a1-00b8-414c-80cb-86f3c5ba3055.jpeg-ef4b72557533579c7e207e24a8215e6a.ctex"
+uid="uid://dcnmgpur3v62e"
+path="res://.godot/imported/kid.png-9dfbf3b874c0bc685c7888840cd864b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/2f2ac5a1-00b8-414c-80cb-86f3c5ba3055.jpeg"
-dest_files=["res://.godot/imported/2f2ac5a1-00b8-414c-80cb-86f3c5ba3055.jpeg-ef4b72557533579c7e207e24a8215e6a.ctex"]
+source_file="res://sprites/enemy/kid.png"
+dest_files=["res://.godot/imported/kid.png-9dfbf3b874c0bc685c7888840cd864b6.ctex"]
 
 [params]
 
