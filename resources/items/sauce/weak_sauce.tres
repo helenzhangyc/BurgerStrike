@@ -1,11 +1,15 @@
-[gd_resource type="Resource" script_class="SauceItem" load_steps=2 format=3 uid="uid://bce1t0sjw6mj"]
+[gd_resource type="Resource" script_class="SauceItem" load_steps=4 format=3 uid="uid://cby46r3r2nmfy"]
 
 [ext_resource type="Script" path="res://scripts/resources/SauceItem.gd" id="1_2mxwd"]
+[ext_resource type="Texture2D" uid="uid://chcfptgo6mtt0" path="res://sprites/bullet/weak_sauce_bullet.png" id="1_178mi"]
+[ext_resource type="Texture2D" uid="uid://c3rmqxxkufc0h" path="res://sprites/sauce/weak_sauce.png" id="2_3w8t4"]
 
 [resource]
 script = ExtResource("1_2mxwd")
 damage = 1
 bullet_sprite = "res://sprites/bullet/weak_sauce_bullet.png"
+bullet_texture = ExtResource("1_178mi")
 pierce = 1
 name = "Weak Sauce"
 image_path = "res://sprites/sauce/weak_sauce.png"
+image_texture = ExtResource("2_3w8t4")

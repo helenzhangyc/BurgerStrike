@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://drrf78r2t3v22"]
+[gd_scene load_steps=3 format=3 uid="uid://m73rg7pllr0c"]
 
-[ext_resource type="PackedScene" path="res://scenes/levels/TitleUI.tscn" id="1_tlrdu"]
+[ext_resource type="PackedScene" uid="uid://ckjxr026ls76t" path="res://scenes/levels/TitleUI.tscn" id="1_tlrdu"]
 [ext_resource type="AudioStream" uid="uid://dlh1cvlb87j5t" path="res://audio/music/mainmenu.mp3" id="2_6diuk"]
 
 [node name="Title" type="Node2D"]

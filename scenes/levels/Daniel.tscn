@@ -11,7 +11,7 @@
 [ext_resource type="Script" path="res://scripts/WaveManager.gd" id="8_qan7t"]
 [ext_resource type="Script" path="res://scripts/WaveSpawn.gd" id="9_jy4ro"]
 [ext_resource type="Texture2D" uid="uid://bdidfxlk2bbd" path="res://sprites/map.png" id="10_hxebl"]
-[ext_resource type="PackedScene" uid="uid://djsyenkottqv0" path="res://scenes/DashEnemy.tscn" id="10_so26v"]
+[ext_resource type="PackedScene" uid="uid://0v8332ino1gs" path="res://scenes/DashEnemy.tscn" id="10_so26v"]
 [ext_resource type="AudioStream" uid="uid://ddrv3f7qckn8c" path="res://audio/music/bgm.mp3" id="13_teb2s"]
 [ext_resource type="PackedScene" uid="uid://cci1qwbp5k0uw" path="res://scenes/map/TableChair.tscn" id="14_7fqfw"]
 [ext_resource type="PackedScene" uid="uid://mw6a7xmk22ig" path="res://scenes/KidEnemy.tscn" id="14_fqrwf"]

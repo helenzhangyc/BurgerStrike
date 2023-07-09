@@ -1,11 +1,15 @@
-[gd_resource type="Resource" script_class="SauceItem" load_steps=2 format=3 uid="uid://gk7qypk05u23"]
+[gd_resource type="Resource" script_class="SauceItem" load_steps=4 format=3 uid="uid://gk7qypk05u23"]
 
+[ext_resource type="Texture2D" uid="uid://bw8tlxsdn3t6d" path="res://sprites/bullet/ketchup_bullet.png" id="1_1i2h2"]
 [ext_resource type="Script" path="res://scripts/resources/SauceItem.gd" id="1_u68gb"]
+[ext_resource type="Texture2D" uid="uid://cvmmdyd87oanq" path="res://sprites/sauce/ketchup.png" id="2_s7i2g"]
 
 [resource]
 script = ExtResource("1_u68gb")
 damage = 1
 bullet_sprite = "res://sprites/bullet/ketchup_bullet.png"
+bullet_texture = ExtResource("1_1i2h2")
 pierce = 2
 name = "Ketchup"
 image_path = "res://sprites/sauce/ketchup.png"
+image_texture = ExtResource("2_s7i2g")
