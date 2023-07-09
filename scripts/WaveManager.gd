@@ -5,22 +5,36 @@ extends Node
 @onready var spawn_timer = $SpawnTimer
 
 @onready var globals = get_node("/root/Globals")
+@onready var signal_bus = get_node("/root/SignalBus")
 
-var current_wave: int = 0
+@export var current_wave: int = 0
 
 # time between waves
-@export var WAVE_REST = 5
+@export var WAVE_REST = 1
 # time between spawning concecutive enemies
 @export var SPAWN_REST = 0.2
 
+# keep track of how many enemies are left
+var left_in_wave = 0
+
 func _ready():
+	signal_bus.enemy_died.connect(_enemy_died)
+
 	spawn_timer.timeout.connect(_on_spawn_timer_timeout)
 	spawn_timer.one_shot = true
 	start_wave()
 
+func _enemy_died():
+	left_in_wave -= 1
+	if left_in_wave <= 0:
+		left_in_wave = 0
+		spawn_timer.start()
+
+
 func _on_spawn_timer_timeout():
 	print("starting wave")
 	start_wave()
+
 
 func start_wave():
 	spawn_timer.stop()
@@ -42,7 +56,7 @@ func start_wave():
 			globals.add_child(inst)
 
 			await get_tree().create_timer(SPAWN_REST).timeout	
+			left_in_wave += 1
 
-	spawn_timer.start()
 	current_wave += 1
 

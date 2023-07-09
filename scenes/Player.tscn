@@ -8,13 +8,13 @@
 [ext_resource type="PackedScene" uid="uid://c2mxgonifbyx4" path="res://scenes/BobbingTweener.tscn" id="3_ds64n"]
 [ext_resource type="Script" path="res://scripts/Inventory.gd" id="4_py77w"]
 [ext_resource type="Script" path="res://scripts/Shooter.gd" id="5_372h2"]
-[ext_resource type="Resource" uid="uid://gk7qypk05u23" path="res://resources/items/sauce/ketchup.tres" id="6_1m6i8"]
 [ext_resource type="Script" path="res://scripts/Stats.gd" id="7_hndj4"]
 [ext_resource type="AudioStream" uid="uid://nm8fkkasoa2e" path="res://audio/sfx/step_01.wav" id="8_uvkqu"]
 [ext_resource type="Script" path="res://scripts/WalkSFX.gd" id="9_6entu"]
 [ext_resource type="Script" path="res://scripts/WalkParticles.gd" id="10_4nsey"]
 [ext_resource type="Resource" uid="uid://h54o44qdgq0w" path="res://resources/items/burger/lettuce.tres" id="10_04q36"]
 [ext_resource type="PackedScene" uid="uid://bb3yr2vgs54hk" path="res://scenes/particles/WalkParticles.tscn" id="10_n4dqa"]
+[ext_resource type="Resource" uid="uid://cby46r3r2nmfy" path="res://resources/items/sauce/weak_sauce.tres" id="12_ou8su"]
 [ext_resource type="Script" path="res://scripts/PickupSFX.gd" id="14_a3p7l"]
 [ext_resource type="Script" path="res://scripts/RandomAudioPlayer.gd" id="14_n6fgr"]
 [ext_resource type="AudioStream" uid="uid://bqectoi84qbcx" path="res://audio/sfx/pickup_01.wav" id="15_6lbhi"]
@@ -134,7 +134,7 @@ items = Array[Resource("res://scripts/resources/BurgerItem.gd")]([ExtResource("1
 
 [node name="Shooter" type="Node2D" parent="."]
 script = ExtResource("5_372h2")
-default_ammo = ExtResource("6_1m6i8")
+default_ammo = ExtResource("12_ou8su")
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 2
